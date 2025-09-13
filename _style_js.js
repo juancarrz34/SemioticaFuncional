@@ -23,7 +23,9 @@ var myTheme = {
 		$("#siteNav").before(l);
 		$("#topPagination .pagination").prepend('<a href="#" onclick="window.print();return false" title="'+$exe_i18n.print+'" class="print-page"><span>'+$exe_i18n.print+'</span></a> ');
 		this.addNavArrows();
-		this.bigInputs();		
+		this.addMenuToggle();
+		this.bigInputs();
+		this.setModuleHrefs();  // Call the new function to set hrefs based on device
 		var url = window.location.href;
 		url = url.split("?");
 		if (url.length>1){
@@ -72,7 +74,12 @@ var myTheme = {
 				this.innerHTML+='<span> &#9658;</span>';
 			}
 		);
-	},	
+	},
+	addMenuToggle : function(){
+		// Remove toggle click handlers from module links
+		$("#siteNav li#active").addClass('open');
+		$("#siteNav .daddy").off('click');
+	},
 	hideMenu : function(){
 		$("#siteNav").hide();
 		$(document.body).addClass("no-nav");
@@ -167,6 +174,37 @@ var myTheme = {
 	},
 	reset : function() {
 		myTheme.setNavHeight();
+	},
+
+	setModuleHrefs : function() {
+		// Check if device is mobile or PC
+		var isMobile = this.isMobile();
+		// Map module names to their HTML files
+		var moduleMap = {
+			"Módulo introductorio": "mdulo_introductorio.html",
+			"Módulo de diagnóstico": "mdulo_de_diagnstico.html",
+			"Módulo de desarrollo": "mdulo_de_desarrollo.html",
+			"Módulo de evaluación": "mdulo_de_evaluacin.html"
+		};
+		// For each module link in the nav, set href accordingly
+		$("#siteNav > ul > li").each(function() {
+			var $li = $(this);
+			var $a = $li.children("a.daddy");
+			if ($a.length > 0 && !$a.hasClass("main-node")) {
+				var text = $a.text().trim();
+				var href = moduleMap[text] || "#";
+				if (isMobile) {
+					// On mobile, href points to the module HTML and remove toggle behavior
+					$a.off('click').attr("href", href);
+				} else {
+					// On PC, href is # and add toggle behavior
+					$a.attr("href", "#").on('click', function(e){
+						e.preventDefault();
+						$(this).parent().toggleClass('open');
+					});
+				}
+			}
+		});
 	},
 	getCustomIcons : function(){
 		// Provisional solution so the user can use the iDevice Editor to choose an icon

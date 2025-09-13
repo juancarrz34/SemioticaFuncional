@@ -247,10 +247,10 @@ margin:-2.15em 0 0 14em
 * html #siteNav li ul ul{
 margin-left:13em
 }
-#siteNav li:hover ul ul,#siteNav li:hover ul ul ul,#siteNav li.sfhover ul ul,#siteNav li.sfhover ul ul ul{
+#siteNav li.open ul ul,#siteNav li.open ul ul ul,#siteNav li.sfhover ul ul,#siteNav li.sfhover ul ul ul{
 left:-999em
 }
-#siteNav li:hover ul,#siteNav li li:hover ul,#siteNav li li li:hover ul,#siteNav li.sfhover ul,#siteNav li li.sfhover ul,#siteNav li li li.sfhover ul{
+#siteNav li.open ul,#siteNav li li.open ul,#siteNav li li li.open ul,#siteNav li.sfhover ul,#siteNav li li.sfhover ul,#siteNav li li li.sfhover ul{
 left:auto
 }
 #siteNav .daddy{

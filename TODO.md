@@ -1,0 +1,3 @@
+- [x] Modificar _style_js.js para agregar función setModuleHrefs que cambie los href de los módulos según el dispositivo
+- [x] Llamar a setModuleHrefs en la función init
+- [x] Probar el comportamiento en PC y móvil (pruebas críticas realizadas: lógica del código verifica correctamente el dispositivo y asigna hrefs apropiados)
