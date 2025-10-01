@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contenidos teóricos | Representaciones simióticas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Lic. Juan" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Estilos principales -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+  }
+  main h2 {
+    margin-top: 1.5rem;
+    color: #1b263b;
+  }
+  ol li {
+    margin-bottom: 0.8rem;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+</head>
+<body class="exe-web-site" id="exe-node-15">
+<script>document.body.className+=" js"</script>
+
+<div id="content">
+   <header id="header">
+    <div id="headerContent">Semiótica Funcional</div>
+  </header>
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+<div id="main-wrapper">
+<section id="main">
+<div class="card" >
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id6">
+<h1 id="nodeTitle">Contenidos teóricos</h1>
+<div class="iDevice emphasis1" >
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_127_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><span style="color: #ff6600;">Función lineal y función afín</span></strong></p>
+<p><strong><span style="color: #ff6600;">Función lineal:</span></strong></p>
+<p>Toda función de la forma <span style="color: #339966;"><strong><em>y = mx</em></strong></span>, donde <span style="color: #339966;"><em><strong>m</strong></em></span>  es una constante diferente de cero, es una función lineal. Además, es función polinómica de primer grado cuya gráfica es una línea recta que pasa por el origen de coordenadas (0, 0), como se observa en la siguiente imagen: </p>
+<p><img src="img0.1.png" width="473" height="446" alt="funcion lineal grafica" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong><span style="color: #ff6600;">Función afín </span></strong></p>
+<p>Toda función de la forma <span style="color: #339966;"><strong><em>y = mx + b</em></strong></span>, donde <span style="color: #339966;"><em><strong>m</strong></em></span> y <span style="color: #339966;"><em><strong>b</strong></em></span>  son constantes diferentes de cero, es una función afín. Además, es una función polinómica de primer grado, pero su gráfica es una línea recta que NO pasa por el origen</p>
+<p><img src="img1.1.png" width="489" height="461" alt="grafica funcion afin " style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p> </p>
+<p><strong><span style="color: #ff6600;">Función constante</span></strong></p>
+<p>Es aquella donde el valor de la función "<em><strong><span style="color: #339966;">la salida"</span></strong></em> no cambia, sin importar el valor de la<strong><em><span style="color: #339966;"> "entrada"</span></em></strong>. En otras palabras, siempre produce el mismo resultado, sin importar el valor que se le ingrese. Matemáticamente, se representa como <span style="color: #339966;"><strong><em>f(x) = c.</em></strong></span></p>
+<p><span style="color: #339966;"><strong><em><img src="img2.1.png" width="506" height="515" alt="funcion constante" style="display: block; margin-left: auto; margin-right: auto;" /></em></strong></span></p>
+<p><span style="color: #339966;"><strong><em></em></strong><strong><span style="color: #ff6600;">Ejemplo 1. </span>  </strong></span>Un agricultor de Villa del Rosario vende sus cosechas de cilantro en el mercado. El precio es $500 por cada atado de cilantro. Representa de formma coherente usando las diferentes representaciones (verbal, algebraica, tabular y gráfica) . </p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><span style="color: #339966;"><strong>Representación verbal:</strong></span> El ingreso es directamente proporcional a los atados vendidos, a $500 por atado. Esto significa que si no vende atados, su ingreso es cero, y por cada atado que vende, su ingreso aumenta en $500 cada uno.</p>
+<p><span style="color: #339966;"><strong>Representación algebraica:</strong></span> Para representar esto, si<strong><em><span style="color: #339966;"> I</span></em> </strong>es el ingreso total y <strong><em><span style="color: #339966;">x</span></em></strong> es el número de atados de cilantro vendidos, la ecuación es:<span style="color: #ff6600;"> <strong><em>I = 500x</em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación tabular: </strong><span style="color: #000000;">Podemos ver cómo el ingreso cambia con el número de atados:</span></span></p>
+<p><span style="color: #339966;"><strong><em><img src="img3.1.png" width="257" height="163" alt="tabla cilantros" /></em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación gráfica:</strong> </span></p>
+<p><img src="plano_cartesiano_I_500x_etiquetas.png" width="719" height="529" alt="Plano cartesiano ascendente" /></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 2. </strong> </span>En una zona rural de Villa del Rosario, durante la temporada de lluvias, el nivel de una quebrada comienza en 0.2 metros y aumenta 0.1 metros cada hora debido a la precipitación constante.</p>
+<p><span style="color: #ff6600;"><strong>Análisis y solución coherente:</strong></span></p>
+<p><span style="color: #339966;"><strong>Representación verbal:</strong> </span>El nivel de la quebrada inicia en 0.2 metros y sube 0.1 metros cada hora. Esto describe un punto de partida y una tasa de crecimiento constante.</p>
+<p><span style="color: #339966;"><strong>Representación algebraica:</strong></span> Si <em><strong><span style="color: #339966;">N</span></strong></em> es el nivel de la quebrada en metros y <em><strong><span style="color: #339966;">t</span></strong></em> es el tiempo en horas, la ecuación es: <span style="color: #ff6600;"><strong><em>N = 0.1 t +0.2</em></strong></span></p>
+<p><strong><span style="color: #339966;">Representacion tabular: </span></strong>Podemos ver cómo el nivel de la quebrada cambia con el tiempo de precipitaciones:<br /> <img src="img6.1.png" width="252" height="252" alt="Tabular nivel " /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span><br /><img src="plano_N_0.1t_mas_0.2.png" width="681" height="504" alt="Nivel de la quebrada " /></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 3. </strong></span>Un hacendado en Villa del Rosario alquila caballerizas. Si tiene 120 caballerizas disponibles y cada mes se alquilan 5 caballerizas, ¿cuántas caballerizas quedan disponibles con el paso del tiempo?</p>
+<p><span style="color: #ff6600;"><strong>Análisis y solución coherente:</strong></span></p>
+<p><strong><span style="color: #339966;">Representación verbal:</span></strong> El número de caballerizas disponibles disminuye 5 unidades cada mes, partiendo de 120. Esto significa que hay un inventario inicial y una reducción constante.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong></span> Si <span style="color: #339966;"><em><strong>D</strong></em></span> es el número de caballerizas disponibles y <span style="color: #339966;"><em><strong>m</strong></em></span> es el número de meses, la ecuación es: <span style="color: #ff6600;"><em><strong>D = 120 - 5m.</strong></em></span></p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong> </span>Podemos ver cómo la disponibilidad de caballerizas cambia con el tiempo:<br /><img src="img8.1.png" width="323" height="240" alt="tabla meses disponibilidad" /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica: <br /><img src="img22.png" width="679" height="519" alt="disponibilidad caballerizas" /><br /><br /><span style="color: #ff6600;">Ejemplo 4. </span></strong></span>En Cúcuta, el servicio de mototaxi tiene una tarifa base fija de $3.000, más $500 por cada kilómetro adicional recorrido. Queremos modelar el costo total del viaje.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><span style="color: #339966;"><strong>Representación Verbal:</strong></span> El costo del mototaxi incluye una tarifa inicial de $3.000 y aumenta en $500 por cada kilómetro extra recorrido.<br /><strong><span style="color: #339966;"></span></strong></p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span></strong> Si <span style="color: #339966;"><em><strong>C</strong></em></span> es el costo total del viaje y <em><strong><span style="color: #339966;">k</span></strong></em> son los kilómetros adicionales, la ecuación es: <span style="color: #ff6600;"><strong><em>C = 500k + 3000.</em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Tabular: </strong></span><br /><img src="img7.1.png" width="334" height="197" alt="tabla kilometrol vs total" /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span><br /><img src="plano_coste_500km_mas_3000.png" width="744" height="553" alt="Grafica costo respecto a distancia" /></p>
+<p><strong><span style="color: #ff6600;">Ejemplo 5.</span></strong> Un tanque de agua en una vivienda rural en El Zulia tiene 800 litros de agua y, debido al uso constante, pierde 20 litros cada hora. Queremos saber la cantidad de agua restante en el tanque con el tiempo.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> El tanque comienza con 800 litros de agua y su cantidad disminuye en 20 litros por cada hora de uso.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong> </span>Si <strong><em><span style="color: #339966;">Y</span></em></strong> es la cantidad de agua en litros y <em><strong><span style="color: #339966;">x</span></strong></em> es el tiempo en horas, la ecuación es: <span style="color: #ff6600;"><strong><em>Y = 800 − 20x.</em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Tabular: <br /><img src="img27.1.png" width="244" height="219" /><br /></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:<br /><img src="img12.png" width="734" height="559" alt="recta descendiente rio zulia" /><br /></strong></span></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 6.</strong> </span> Una población pequeña en una vereda cerca al El Escobal (Cúcuta) se estimó en 1.500 habitantes enel  2020 y ha estado creciendo a una tasa constante de 25 habitantes por año. Queremos proyectar el crecimiento de la población.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> La vereda tuvo una población inicial de 1.500 habitantes en el año 0 (2020) y aumenta en 25 personas cada año.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong></span> Si <em><strong><span style="color: #339966;">Y</span> </strong></em>es la población y <strong><span style="color: #339966;">x</span></strong> son los años transcurridos desde 2020, la ecuación es: <span style="color: #ff6600;"><strong><em>Y = 25x + 1500.</em></strong></span></p>
+<p><strong><span style="color: #339966;">Representación Tabular:</span></strong></p>
+<p><img src="img40.4.png" width="331" height="139" alt="Crecimiento poblacion " /></p>
+<p><strong><span style="color: #339966;">Representación Gráfica: </span></strong></p>
+<p><strong><span style="color: #339966;"><img src="plano_ascendente_y_25x_mas1500.png" width="730" height="522" alt="Grafica poblacion ascendente" /></span></strong></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 7. </strong></span>Una pequeña fábrica artesanal de ladrillos en San Faustino produce 300 ladrillos por día de manera constante. Queremos representar la producción total de ladrillos.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><span style="color: #339966;"><strong>Representación Verbal:</strong></span> La fábrica produce ladrillos a una tasa constante de 300 unidades por día. No hay producción si no hay días de trabajo.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong> </span>Si L es el número total de ladrillos producidos y d es el número de días, la ecuación es: <span style="color: #ff6600;"><strong><em>L = 300d</em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Tabular: </strong></span></p>
+<p><span style="color: #339966;"><strong><br /><img src="img15.png" width="252" height="225" alt="tabla ladrillos" /><br /></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:  <br /><img src="plano_L_300d.png" width="805" height="594" alt="grafica produccion ladrillo" /><br /></strong></span></p>
+<p><span style="color: #339966;"><strong><span style="color: #ff6600;">Ejemplo 8</span>. </strong></span>En el mercado de La Parada, el precio del café orgánico es de $18.000 por cada kilogramo. Queremos modelar el costo total de la compra.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> El costo total del café orgánico es directamente proporcional a la cantidad de kilogramos comprados, a razón de $18.000 por kilogramo.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span></strong> Si C es el costo total en pesos y k son los kilogramos de café, la ecuación es: <span style="color: #ff6600;"><strong><em>C = 18.000k.</em></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Tabular:<br /><img src="img17.png" width="275" height="215" alt="Costos café" /><br /></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span></p>
+<p><span style="color: #339966;"><strong><img src="plano_C_18000k.png" width="744" height="528" alt="costo produccion cafe" /></strong></span></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 9. </strong></span>En un día de diciembre en Cúcuta, la temperatura comenzó en 30°C y disminuyó 2°C cada hora durante la noche. Queremos modelar la temperatura a lo largo del tiempo.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span> </strong>La temperatura inicial fue de 30°C, y bajó a una tasa constante de 2°C por hora.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica: </span></strong>Si T es la temperatura en °C y h es el número de horas transcurridas desde el inicio del descenso, la ecuación es: <span style="color: #ff6600;"><em><strong>T = 30 − 2h.</strong></em></span></p>
+<p><strong><span style="color: #339966;">Representación Tabular:<br /><img src="img19.png" width="309" height="230" alt="Horas temperatura cucuta" /><br /></span></strong></p>
+<p><strong><span style="color: #339966;">Representación Gráfica:<br /><img src="img20.png" width="706" height="537" alt="Grafica temperatura cucuta" /><br /></span></strong></p>
+<p><strong><span style="color: #339966;"><span style="color: #ff6600;">Ejemplo 10. </span> </span></strong>Un puesto de arepas en el centro de Cúcuta vende cada arepa a $1.500. Queremos modelar el ingreso total por la venta de arepas.</p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> El ingreso total por la venta de arepas es proporcional al número de arepas vendidas, a razón de $1.500 por arepa.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span> </strong>Si <strong><span style="color: #ff6600;">I</span></strong> es el ingreso total y <strong><span style="color: #ff6600;">a</span></strong> es el número de arepas vendidas, la ecuación es: <strong><em><span style="color: #ff6600;">I = 1500a.</span></em></strong></p>
+<p><strong><span style="color: #339966;">Representación Tabular:</span></strong></p>
+<p><img src="img21.png" width="331" height="214" alt="Arepas vendidas" /><br /><strong><span style="color: #339966;">Representación Gráfica:<br /><img src="plano_I_1500a.png" width="813" height="568" alt="ingreso grafica arepas" /></span></strong></p>
+<p><strong><span style="color: #339966;"><span style="color: #ff6600;">Ejemplo 11. </span> </span></strong>Un vehículo en una ruta larga desde Cúcuta tiene 40 litros de gasolina en su tanque. Consume combustible a una tasa constante de 5 litros por cada 100 kilómetros recorridos.</p>
+<p><span style="color: #ff6600;"><strong>Análisis y solución coherente:</strong></span></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> El tanque de gasolina comienza con 40 litros. La cantidad de gasolina disminuye a una tasa de 5 litros por cada 100 kilómetros recorridos.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span></strong> La tasa de consumo es 5 litros/100 km = 0.05 litros/km. Si <em><span style="color: #339966;"><strong>G</strong></span></em> es la gasolina restante en litros y <span style="color: #339966;"><em><strong>d</strong> </em></span>son los kilómetros recorridos, la ecuación es: <strong><span style="color: #ff6600;"><em>G = 40 − 0.05d</em></span></strong></p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong></span></p>
+<p><img src="img40.2.png" width="421" height="150" alt="tabla gasolina" /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span><br /><img src="img26.png" width="635" height="377" alt="grafica" /><br /><strong><span style="color: #ff6600;">Ejemplo 12. </span></strong>En un cultivo de plátano en el corregimiento de San Faustino, una planta joven mide 15 cm de altura y se observa que crece 2 cm cada día en condiciones óptimas.</p>
+<p><span style="color: #ff6600;"><strong>Análisis y solución coherente:</strong></span></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> La planta de plátano tiene una altura inicial de 15 cm y su altura aumenta 2 cm por día.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span> </strong>Si <em><span style="color: #339966;"><strong>A</strong></span></em> es la altura de la planta en cm y <em><strong><span style="color: #339966;">d</span> </strong></em>es el número de días, la ecuación es: <em><span style="color: #ff6600;"><strong>A = 2d + 15</strong></span></em></p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong></span></p>
+<p><img src="img24.png" width="213" height="208" alt="Altura platano " /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span></p>
+<p><img src="img40.1.png" width="601" height="373" alt="crecimiento de la planta" /></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 13. </strong></span>Un pozo de agua en una finca cercana a Cúcuta tenía un nivel inicial de 10 metros. Durante una sequía prolongada, su nivel ha estado disminuyendo a una tasa de 0.5 metros por semana.</p>
+<p><span style="color: #ff6600;"><strong>Análisis y solución coherente:</strong></span></p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span></strong> El pozo comenzó con un nivel de 10 metros, y este nivel disminuye en 0.5 metros cada semana debido a la sequía.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong></span> Si <em><span style="color: #339966;"><strong>N</strong></span></em> es el nivel del pozo en metros y <strong><em><span style="color: #339966;">s</span> </em></strong>es el número de semanas, la ecuación es:<em><strong><span style="color: #ff6600;"> N = 10 − 0.5s</span></strong></em></p>
+<p><span style="color: #339966;"><strong>Representación Tabular: </strong></span></p>
+<p><span style="color: #339966;"><strong><img src="img25.png" width="326" height="212" alt="tabla sequia" /></strong></span></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span></p>
+<p><img src="img28.png" width="635" height="379" alt="Grafica funcion del tiempo" /></p>
+<p><strong><span style="color: #ff6600;">Ejemplo  14. </span></strong> Un agricultor en El Zulia está monitoreando el crecimiento de sus plantas de yuca. La siguiente tabla muestra la altura promedio de las plantas en centímetros a lo largo de varias semanas:<br /><img src="img29.png" width="270" height="138" alt="tabla crecimiento yuca" /></p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Paso 1:</span> </strong>Calcular la Pendiente (<em><span style="color: #339966;"><strong>m</strong></span></em>) Para hallar la pendiente, tomamos dos puntos de la tabla, por ejemplo, ( s1 ​, A1 ​) = ( 2 , 25 ) y ( s2 ​, A2 ​) = ( 4 , 35 ).</p>
+<p><img src="img34.png" width="388" height="50" /></p>
+<p><span style="color: #339966;"><strong>Paso 2:</strong></span> Calcular la Ordenada al Origen (<em><strong><span style="color: #339966;">b</span></strong></em>) Usamos la fórmula <span style="color: #339966;"><em><strong>y = mx + b</strong></em></span>. Sustituimos un punto como por ejemplo: (2, 25) y la pendiente (<span style="color: #339966;"><strong><em>m = 5</em></strong></span>): <br /><br />25 = 5(2)+b <br />25 = 10+b <br />b = 15<br /><br /><span style="color: #339966;"><strong>Representación Verbal:</strong> </span>La altura promedio de las plantas de yuca comienza en 15 cm y aumenta 5 cm cada semana.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica:</strong></span> Si <span style="color: #ff6600;"><strong><em>A</em></strong></span> es la altura en cm y<em><strong><span style="color: #ff6600;"> s</span> </strong></em>son las semanas, la ecuación es: <em><strong><span style="color: #ff6600;">A = 5s + 15. </span></strong></em>La pendiente (m) es <em><span style="color: #ff6600;"><strong>5</strong></span></em>.</p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong></span> (Ya proporcionada en la situación, pero se incluye para completar el ciclo de coherencia).<br /><img src="img31.png" width="277" height="141" alt="tabla altura y semanas" /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span></p>
+<p><img src="img32.png" width="622" height="386" alt="Grafica altura de plantas" /></p>
+<p><span style="color: #ff6600;"><strong>Ejemplo 15. </strong></span>Un camión de carga que transporta mercancía desde Cúcuta hacia Puerto Santander registra el combustible consumido en función de los kilómetros recorridos.</p>
+<p><img src="img40.3.png" width="507" height="160" alt="tabla gasolina G" /></p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><span style="color: #339966;"><strong>Paso 1:</strong> </span>Calcular la Pendiente (<strong><em><span style="color: #339966;">m</span></em></strong>) Tomamos dos puntos de la tabla, por ejemplo, ( k1 ​, C1 ​)=( 50 , 8 ) y ( k2 ​, C2​) = ( 100,16 ).</p>
+<p><img src="img34.jpg" width="410" height="53" alt="Reemplazo pendiente ej 13" /></p>
+<p><span style="color: #339966;"><strong>Paso 2:</strong></span> Calcular la Ordenada al Origen (<em><strong><span style="color: #339966;">b</span></strong></em>) Usamos la fórmula <strong><span style="color: #339966;">y =mx + b</span></strong>. Sustituimos un punto (ej. (50, 8)) y la pendiente (<em><span style="color: #339966;"><strong> m = 0.16</strong></span></em>):</p>
+<p>8 = 0.16 (50) + b</p>
+<p>8 = 8 + b</p>
+<p>b = 0</p>
+<p><span style="color: #339966;"><strong>Representación Verbal:</strong></span> El consumo de combustible del camión es proporcional a los kilómetros recorridos, con un consumo de 0.16 litros por cada kilómetro.</p>
+<p><span style="color: #339966;"><strong>Representación Algebraica</strong></span>: Si <em><strong><span style="color: #ff6600;">C</span></strong></em> es el combustible consumido en litros y <em><strong><span style="color: #ff6600;">k</span></strong></em> son los kilómetros recorridos, la ecuación es: <em><strong><span style="color: #ff6600;">C = 0.16k</span></strong></em> . La pendiente (m) es <span style="color: #ff6600;"><em><strong>0.16</strong></em></span>.</p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong></span> (Ya proporcionada).</p>
+<p><img src="img40.3.png" width="507" height="160" alt="Tabla gasolina G" /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica: </strong></span></p>
+<p><img src="img36.png" width="601" height="360" alt="grafica combustible" /></p>
+<p><strong><span style="color: #ff6600;">Ejemplo 16. </span></strong>Durante una época de pocas lluvias, se monitorea el nivel de agua en una pequeña represa en San Faustino. La tabla muestra el nivel de agua en metros a lo largo de los días:</p>
+<p><img src="img37.png" width="372" height="160" alt="tabla nivel de agua " /></p>
+<p><strong><span style="color: #ff6600;">Análisis y solución coherente:</span></strong></p>
+<p><strong><span style="color: #339966;">Paso 1:</span> </strong>Calcular la Pendiente (<strong><em><span style="color: #339966;">m</span></em></strong>) Tomamos dos puntos de la tabla, por ejemplo, ( d1 ​, N1 ​) = ( 10 , 150 ) y ( d2 ​, N2 ​) = ( 20 , 145 ).</p>
+<p><img src="img38.png" width="453" height="54" alt="pendiente reemplazo ej 16" /></p>
+<p><strong><span style="color: #339966;">Paso 2:</span> </strong>Calcular la Ordenada al Origen (<span style="color: #339966;"><strong><em>b</em></strong></span>) Usamos la fórmula <strong><em><span style="color: #ff6600;"><span style="color: #339966;">y = mx + b</span>.</span></em></strong> Sustituimos un punto (ej. ( 10 , 150 )) y la pendiente (<span style="color: #339966;"><strong><em>m=−0.5</em></strong></span>):</p>
+<p>150 = −0.5 (10) + b</p>
+<p>150 = −5 + b</p>
+<p>b = 155</p>
+<p><strong><span style="color: #339966;">Representación Verbal:</span> </strong>El nivel de agua en la represa disminuye 0.5 metros cada día. Si se proyecta hacia atrás, el nivel inicial hipotético al día 0 sería de 155 metros.</p>
+<p><strong><span style="color: #339966;">Representación Algebraica:</span></strong> Si <strong><em><span style="color: #ff6600;">N</span></em></strong> es el nivel de agua en metros y <em><strong><span style="color: #ff6600;">d</span></strong></em> son los días, la ecuación es: <strong><em><span style="color: #ff6600;">N = -0.5d + 155. </span></em></strong> La pendiente (m) es -<em><strong><span style="color: #ff6600;">0.5</span></strong></em>.</p>
+<p><span style="color: #339966;"><strong>Representación Tabular:</strong></span> (Ya proporcionada)<br /><img src="img39.png" width="390" height="161" alt="tabla nivel de agua " /></p>
+<p><span style="color: #339966;"><strong>Representación Gráfica: </strong></span><br /><img src="img40.png" width="601" height="374" alt="grafica disminucion rio" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

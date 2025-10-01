@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo de diagnóstico | Semiótica Funcional</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+    margin-bottom: 1.5rem;
+  }
+  .placeholder {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem 0;
+    border: 2px dashed #ffcc66;
+    border-radius: 8px;
+    background-color: #fff8e6;
+  }
+
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Semiótica Funcional
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html" class="active">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<article class="card">
+  <div class="card-content">
+    <h1 style="text-align:left; color:#0d1b2a; font-family: 'Merriweather', serif; font-size:2rem; margin-bottom:1rem;">
+      Diagnóstico TIC
+    </h1>
+    <p>
+      El diagnóstico TIC tiene como propósito identificar el nivel de dominio que poseen los estudiantes en el uso de las tecnologías de la información y la comunicación, así como el grado de conocimiento previo que tienen sobre el concepto de funciones matemáticas. Para ello, se implementará un instrumento digital en Google Forms, que permitirá recopilar información de manera ágil y sistemática, complementado con la aplicación de un pretest de conocimientos que evaluará la comprensión inicial de los estudiantes sobre el tema.
+    </p>
+    <p>
+      Este diagnóstico servirá como punto de partida para reconocer fortalezas, debilidades y necesidades formativas, orientando las estrategias pedagógicas y el diseño de actividades que integren las TIC como recurso para fortalecer la enseñanza y el aprendizaje de las matemáticas.
+    </p>
+  </div>
+</article>
+
+</main>
+
+<footer>
+  &copy; 2025 - Recurso TIC | Licencia <a href="http://creativecommons.org/licenses/by-sa/4.0/" style="color:#ffcc66;">CC BY-SA 4.0</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historia de las funciones | Semiótica Funcional</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Estilos principales -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+    margin-bottom: 1rem;
+  }
+  main h2 {
+    margin-top: 1.5rem;
+    color: #1b263b;
+  }
+  ul li {
+    margin-bottom: 0.8rem;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
+  footer a {
+    color: #ffcc66;
+    text-decoration: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Semiótica Funcional
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html" class="active">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html" class="active">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Historia de las funciones</h1>
+  <p>La historia de las funciones lineales y afines en matemáticas está profundamente entrelazada con el desarrollo de la geometría, el álgebra y el análisis. Estas funciones han evolucionado desde conceptos geométricos en la antigüedad hasta convertirse en herramientas fundamentales del álgebra moderna. A continuación, se presenta una visión general de su evolución histórica:</p>
+  
+  <ul>
+    <li><span class="highlight">Antigüedad:</span> Civilizaciones como los egipcios y babilonios ya resolvían problemas prácticos que hoy podemos modelar con funciones lineales. En la Grecia clásica, Euclides trabajaba proporciones y relaciones geométricas equivalentes a funciones lineales.</li>
+    
+    <li><span class="highlight">Edad Media y Renacimiento:</span> Matemáticos islámicos como Al-Khwarizmi desarrollaron el álgebra para resolver ecuaciones lineales y cuadráticas. En el Renacimiento, François Viète consolidó la notación algebraica.</li>
+    
+    <li><span class="highlight">Siglo XVII:</span> René Descartes introduce la geometría analítica en <em>La Géométrie</em> (1637), asociando ecuaciones algebraicas con representaciones gráficas. Aquí nace la ecuación de la recta <em>y = mx + b</em>.</li>
+    
+    <li><span class="highlight">Siglo XVIII–XIX:</span> Con Euler, Lagrange y Cauchy se formaliza el concepto de función. Euler introduce la notación f(x), y las funciones lineales se convierten en casos fundamentales dentro del cálculo y el álgebra.</li>
+    
+    <li><span class="highlight">Siglo XX:</span> Las funciones lineales se incluyen en la educación secundaria como modelos de relaciones proporcionales. En matemática avanzada, son esenciales en <strong>álgebra lineal</strong>, <strong>cálculo</strong>, <strong>economía</strong> y <strong>física</strong>.</li>
+  </ul>
+</main>
+
+<footer>
+  &copy; 2025 - Recurso TIC | Licencia 
+  <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+</footer>
+
+</body>
+</html>

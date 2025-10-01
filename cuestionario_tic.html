@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Cuestionario TIC | Semiótica Funcional</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Lic. Juan" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Estilos principales -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+  }
+  main h2 {
+    margin-top: 1.5rem;
+    color: #1b263b;
+  }
+  ol li {
+    margin-bottom: 0.8rem;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+</head>
+<body class="exe-web-site" id="exe-node-15">
+<script>document.body.className+=" js"</script>
+
+<div id="content">
+   <header id="header">
+    <div id="headerContent">Semiótica Funcional</div>
+  </header>
+
+
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  <!-- MAIN CONTENT -->
+  <div id="main-wrapper">
+    <section id="main">
+      
+
+      <article class="card">
+        <h1 id="nodeTitle" >Cuestionario TIC</h1>
+        <h2>Responde el cuestionario</h2>
+        <p>Por favor completa el siguiente formulario en línea. Tus respuestas nos ayudarán a comprender mejor el uso de las TIC en tu aprendizaje.</p>
+        <div class="iframe-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL5BaGfJ51xzv1j2iJYl5fqdVtMcUbMwLenTvGnvK3ie8SAA/viewform?embedded=true"  width="100%"  height="1200" style="border:none;"   loading="lazy">Cargando…</iframe>
+        </div>
+      </article>
+
+      <!-- LICENSE -->
+      <div id="packageLicense" class="cc cc-by-sa">
+        <p>Obra publicada con <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<p id="made-with-eXe">
+  <a href="https://exelearning.net/" target="_blank" rel="noopener">Creado con eXeLearning (Ventana nueva)</a>
+</p>
+
+</body>
+</html>
+

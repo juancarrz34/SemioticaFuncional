@@ -1,0 +1,1889 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title >Ejercitación | Representaciones simióticas </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Lic. Juan " />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+  body {
+   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+  }
+  main h2 {
+    margin-top: 1.5rem;
+    color: #1b263b;
+  }
+  ol li {
+    margin-bottom: 0.8rem;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+
+</head>
+
+
+
+
+<body class="exe-web-site" id="exe-node-15">
+<script>document.body.className+=" js"</script>
+
+<div id="content">
+   <header id="header">
+    <div id="headerContent";> Semiótica Funcional</div>
+  </header>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div id="main-wrapper">
+<section id="main">
+
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id9">
+<div class="iDevice emphasis1" >
+<div class="card" >
+<h1 class="iDeviceTitle">Pregunta de Elección Múltiple</h1>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-9_86" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_86" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 1. </span> </strong><span style="color: #339966;"><strong>De representación verbal a algebraica</strong> </span></p>
+<p>En una vereda cercana a Juan Frio, un campesino contrata un servicio de transporte para llevar sus productos al mercado. La tarifa del servicio es de $17.000 fijos por viaje, más $3.500 por cada canasta de productos. Si <strong><span style="color: #ff6600;">C</span> </strong>es el costo total y <strong><span style="color: #ff6600;">n</span></strong> es el número de canastas, ¿cuál ecuación modela esta situación?<br /><br /></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_92" class="sr-av"><a href="#answer-9_92">Opción 1</a></label><input type="radio" name="option9_86" id="i9_92" class="exe-radio-option exe-radio-option-0-4-9_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_92"><div id="taans9_92" class="block iDevice_content">
+<p><em>C</em> = 17.000 + 3.500<em>n</em></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_307" class="sr-av"><a href="#answer-9_307">Opción 2</a></label><input type="radio" name="option9_86" id="i9_307" class="exe-radio-option exe-radio-option-1-4-9_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_307"><div id="taans9_307" class="block iDevice_content">
+<p><em>C</em> = 17.000<em>n</em> + 3.500</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_310" class="sr-av"><a href="#answer-9_310">Opción 3</a></label><input type="radio" name="option9_86" id="i9_310" class="exe-radio-option exe-radio-option-2-4-9_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_310"><div id="taans9_310" class="block iDevice_content">
+<p><em>C</em> = 20.5000<em>n</em></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_313" class="sr-av"><a href="#answer-9_313">Opción 4</a></label><input type="radio" name="option9_86" id="i9_313" class="exe-radio-option exe-radio-option-3-4-9_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_313"><div id="taans9_313" class="block iDevice_content">
+<p><em>C</em> = 3.500<em>n</em></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_86" class="feedback js-hidden">
+<div id="taf9_92" class=" iDevice_content">
+<p><strong><span style="color: #339966;">Correcto.</span></strong> La tarifa fija de $17.000 es el valor inicial, que corresponde a la ordenada al origen (b) en la forma <strong><em><span style="color: #ff6600;">y = mx + b</span></em></strong>. Los $3.500 "por cada canasta" representan el costo variable, es decir, la tasa de cambio o pendiente (m). La ecuación C = 2000n + 15000 o C = 15000 + 2000n combina ambos elementos correctamente.</p>
+</div>
+</section>
+<section id="sa1b9_86" class="feedback js-hidden">
+<div id="taf9_307" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto</strong></span>. Esta opción invierte los roles de la tarifa fija y el costo por canasta, haciendo que los $17.000 sean el costo por canasta y los $3.500 la tarifa fija</p>
+</div>
+</section>
+<section id="sa2b9_86" class="feedback js-hidden">
+<div id="taf9_310" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Esta opción suma la tarifa fija y el costo por canasta antes de multiplicarlo por el número de canastas, lo que implicaría que el costo fijo también se multiplicaría, lo cual es incorrecto.</p>
+</div>
+</section>
+<section id="sa3b9_86" class="feedback js-hidden">
+<div id="taf9_313" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Esta opción solo considera el costo por canasta y omite la tarifa fija de $17.000, lo que significa que el costo sería cero si no se lleva ninguna canasta, lo cual no es cierto.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_92">Opción correcta</a><span> (<a href="#sa0b9_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_307">Incorrecto</a><span> (<a href="#sa1b9_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_310">Incorrecto</a><span> (<a href="#sa2b9_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_313">Incorrecto</a><span> (<a href="#sa3b9_86">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_316" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_316" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 2.</span></strong>  <strong><span style="color: #339966;">De representación gráfica a descripción ver</span><span style="color: #339966;">ba</span><span style="color: #339966;">l</span></strong></p>
+<p><br /><img src="img0.2.png" width="588" height="459" alt="grafica disminucion del agua en el tanque" /></p>
+<p>La gráfica muestra la cantidad de agua (en litros) en el tanque de una finca a medida que se usa. ¿Cuál descripción verbal se ajusta mejor a esta gráfica?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_319" class="sr-av"><a href="#answer-9_319">Opción 1</a></label><input type="radio" name="option9_316" id="i9_319" class="exe-radio-option exe-radio-option-0-4-9_316-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_319"><div id="taans9_319" class="block iDevice_content">
+<p>El tanque se llena a una tasa constante.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_322" class="sr-av"><a href="#answer-9_322">Opción 2</a></label><input type="radio" name="option9_316" id="i9_322" class="exe-radio-option exe-radio-option-1-4-9_316-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_322"><div id="taans9_322" class="block iDevice_content">
+<p>El tanque mantiene siempre la misma cantidad de agua.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_326" class="sr-av"><a href="#answer-9_326">Opción 3</a></label><input type="radio" name="option9_316" id="i9_326" class="exe-radio-option exe-radio-option-2-4-9_316-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_326"><div id="taans9_326" class="block iDevice_content">
+<p>El tanque se vacía a una tasa constante hasta quedar sin agua.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_329" class="sr-av"><a href="#answer-9_329">Opción 4</a></label><input type="radio" name="option9_316" id="i9_329" class="exe-radio-option exe-radio-option-3-4-9_316-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_329"><div id="taans9_329" class="block iDevice_content">
+<p>El tanque aumenta y disminuye su nivel de agua.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_316" class="feedback js-hidden">
+<div id="taf9_319" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> "Se llena a una tasa constante" implicaría una línea recta que sube de izquierda a derecha (pendiente positiva)</p>
+</div>
+</section>
+<section id="sa1b9_316" class="feedback js-hidden">
+<div id="taf9_322" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> "Mantiene siempre la misma cantidad de agua" implicaría una línea horizontal (pendiente cero).</p>
+</div>
+</section>
+<section id="sa2b9_316" class="feedback js-hidden">
+<div id="taf9_326" class=" iDevice_content">
+<p><strong><span style="color: #339966;">Correcto.</span></strong> Una línea recta indica un cambio constante (<span style="color: #ff6600;"><strong><em>tasa constante</em></strong></span>). Como la línea va hacia abajo de izquierda a derecha, el valor en el eje vertical (<em><strong><span style="color: #ff6600;">cantidad de agua</span></strong></em>) está disminuyendo. El punto final en el eje horizontal indica que el agua llega a cero.</p>
+</div>
+</section>
+<section id="sa3b9_316" class="feedback js-hidden">
+<div id="taf9_329" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> "Aumenta y disminuye" implicaría una gráfica no lineal, con subidas y bajadas, no una línea recta.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_319">Incorrecto</a><span> (<a href="#sa0b9_316">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_322">Incorrecto</a><span> (<a href="#sa1b9_316">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_326">Opción correcta</a><span> (<a href="#sa2b9_316">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_329">Incorrecto</a><span> (<a href="#sa3b9_316">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_332" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_332" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 3.</span><span style="color: #339966;"> De representación tabular a pendiente.</span></strong></p>
+<p>Un campesino registra la altura promedio de unas plantas de maíz (en cm) cada semana.</p>
+<p><img src="img0.3.png" width="252" height="136" alt="tabla altura semana" /></p>
+<p>¿Cuál es la tasa de crecimiento semanal promedio de las plantas (es decir, la pendiente de la función)?</p>
+<p></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_335" class="sr-av"><a href="#answer-9_335">Opción 1</a></label><input type="radio" name="option9_332" id="i9_335" class="exe-radio-option exe-radio-option-0-4-9_332-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_335"><div id="taans9_335" class="block iDevice_content">
+<p>4 cm / semana</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_338" class="sr-av"><a href="#answer-9_338">Opción 2</a></label><input type="radio" name="option9_332" id="i9_338" class="exe-radio-option exe-radio-option-1-4-9_332-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_338"><div id="taans9_338" class="block iDevice_content">
+<p>6 cm/semana</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_341" class="sr-av"><a href="#answer-9_341">Opción 3</a></label><input type="radio" name="option9_332" id="i9_341" class="exe-radio-option exe-radio-option-2-4-9_332-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_341"><div id="taans9_341" class="block iDevice_content">
+<p>12 cm/semana</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_344" class="sr-av"><a href="#answer-9_344">Opción 4</a></label><input type="radio" name="option9_332" id="i9_344" class="exe-radio-option exe-radio-option-3-4-9_332-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_344"><div id="taans9_344" class="block iDevice_content">
+<p>2 cm/semana</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_332" class="feedback js-hidden">
+<div id="taf9_335" class=" iDevice_content">
+<p>Incorrecto. 4 cm/semana sería si la diferencia en y fuera 8 (por ejemplo, de 10 a 18 en 2 semanas).</p>
+</div>
+</section>
+<section id="sa1b9_332" class="feedback js-hidden">
+<div id="taf9_338" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong> </span>La pendiente (m) se calcula como el cambio en y dividido por el cambio en x (m=Δy/Δx). Tomando los primeros dos puntos (1, 10) y (3, 22): m=(22−10)/(3−1)=12/2 = 6. Esto significa que por cada semana que pasa, la altura aumenta 6 cm.</p>
+</div>
+</section>
+<section id="sa2b9_332" class="feedback js-hidden">
+<div id="taf9_341" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> 12 cm/semana es solo la diferencia en<strong><span style="color: #339966;"> <em>y (12)</em></span></strong> sin dividirla por la diferencia en <span style="color: #339966;"><em><strong>x (2 semanas</strong>).</em></span></p>
+</div>
+</section>
+<section id="sa3b9_332" class="feedback js-hidden">
+<div id="taf9_344" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> 2 cm/semana sería si la diferencia en y fuera 4 (por ejemplo, de 10 a 14 en 2 semanas).</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_335">Incorrecto</a><span> (<a href="#sa0b9_332">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_338">Opción correcta</a><span> (<a href="#sa1b9_332">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_341">Incorrecto</a><span> (<a href="#sa2b9_332">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_344">Incorrecto</a><span> (<a href="#sa3b9_332">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_348" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_348" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 4.</span><span style="color: #339966;"> De representación algebraica a gráfica.</span></strong></p>
+<p><span style="color: #000000;">¿Cuál de las siguientes opciones corresponde a la función <span style="color: #ff6600;"><strong><em>y = </em>1.7<em>x</em></strong></span>, que podría representar la distancia recorrida en kilómetros de un tractor que avanza a 1.7 km/min desde un punto de partida?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_351" class="sr-av"><a href="#answer-9_351">Opción 1</a></label><input type="radio" name="option9_348" id="i9_351" class="exe-radio-option exe-radio-option-0-4-9_348-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_351"><div id="taans9_351" class="block iDevice_content">
+<p>Una recta que corta el eje Y en 1.7 y sube</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_354" class="sr-av"><a href="#answer-9_354">Opción 2</a></label><input type="radio" name="option9_348" id="i9_354" class="exe-radio-option exe-radio-option-1-4-9_348-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_354"><div id="taans9_354" class="block iDevice_content">
+<p>Una recta horizontal que pasa por y = 1.7.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_357" class="sr-av"><a href="#answer-9_357">Opción 3</a></label><input type="radio" name="option9_348" id="i9_357" class="exe-radio-option exe-radio-option-2-4-9_348-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_357"><div id="taans9_357" class="block iDevice_content">
+<p>Una recta que pasa por el origen (0,0) y sube.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_360" class="sr-av"><a href="#answer-9_360">Opción 4</a></label><input type="radio" name="option9_348" id="i9_360" class="exe-radio-option exe-radio-option-3-4-9_348-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_360"><div id="taans9_360" class="block iDevice_content">
+<p>Una recta que baja y pasa por el origen.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_348" class="feedback js-hidden">
+<div id="taf9_351" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecta</strong></span>. Corta el eje Y en 1.7, indicaría que la ordenada al origen (b) es 1.7, lo cual no es el caso de <strong><em><span style="color: #339966;">y = </span></em><span style="color: #339966;">1.7</span><em><span style="color: #339966;">x</span></em></strong></p>
+</div>
+</section>
+<section id="sa1b9_348" class="feedback js-hidden">
+<div id="taf9_354" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto</span></strong>. Una recta horizontal tiene una pendiente de cero, no de 1.7.</p>
+</div>
+</section>
+<section id="sa2b9_348" class="feedback js-hidden">
+<div id="taf9_357" class=" iDevice_content">
+<p><strong><span style="color: #339966;">Correcta.</span> </strong>La ecuación <strong><em><span style="color: #339966;">y = </span></em><span style="color: #339966;">1.7x</span></strong> es una función lineal pura (no afín), lo que significa que no tiene un término constante b diferente de cero (es decir, b=0). Esto implica que su gráfica siempre pasa por el punto (0,0). La pendiente de 1.7 es positiva, por lo que la recta "sube".</p>
+</div>
+</section>
+<section id="sa3b9_348" class="feedback js-hidden">
+<div id="taf9_360" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecta</span></strong>.  Una recta que "baja" tendría una pendiente negativa, y la pendiente de<em><strong><span style="color: #339966;"> y = 1.7x</span></strong></em>  es positiva.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_351">Incorrecto</a><span> (<a href="#sa0b9_348">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_354">Incorrecto</a><span> (<a href="#sa1b9_348">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_357">Opción correcta</a><span> (<a href="#sa2b9_348">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_360">Incorrecto</a><span> (<a href="#sa3b9_348">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_363" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_363" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 5. </span><span style="color: #339966;">De descripción verbal a gráfica.</span></strong></p>
+<p>"El nivel de una represa disminuye constantemente durante la sequía." ¿Qué tipo de gráfica representaría mejor el nivel de agua de la represa a lo largo de los dias (tiempo)?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_366" class="sr-av"><a href="#answer-9_366">Opción 1</a></label><input type="radio" name="option9_363" id="i9_366" class="exe-radio-option exe-radio-option-0-4-9_363-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_366"><div id="taans9_366" class="block iDevice_content">
+<p>Una línea horizontal.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_369" class="sr-av"><a href="#answer-9_369">Opción 2</a></label><input type="radio" name="option9_363" id="i9_369" class="exe-radio-option exe-radio-option-1-4-9_363-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_369"><div id="taans9_369" class="block iDevice_content">
+<p>Una línea que sube constantemente.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_372" class="sr-av"><a href="#answer-9_372">Opción 3</a></label><input type="radio" name="option9_363" id="i9_372" class="exe-radio-option exe-radio-option-2-4-9_363-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_372"><div id="taans9_372" class="block iDevice_content">
+<p>Una línea que baja constantemente.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_375" class="sr-av"><a href="#answer-9_375">Opción 4</a></label><input type="radio" name="option9_363" id="i9_375" class="exe-radio-option exe-radio-option-3-4-9_363-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_375"><div id="taans9_375" class="block iDevice_content">
+<p>Una línea con forma de curva.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_363" class="feedback js-hidden">
+<div id="taf9_366" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Una línea horizontal indica que el nivel no cambia (es constante)</p>
+</div>
+</section>
+<section id="sa1b9_363" class="feedback js-hidden">
+<div id="taf9_369" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Una línea que sube constantemente indica que el nivel está aumentando (crecimiento).</p>
+</div>
+</section>
+<section id="sa2b9_363" class="feedback js-hidden">
+<div id="taf9_372" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto. </strong></span>"Disminuye constantemente" implica que el nivel de agua se reduce a una velocidad uniforme, lo que se traduce en una pendiente negativa.</p>
+</div>
+</section>
+<section id="sa3b9_363" class="feedback js-hidden">
+<div id="taf9_375" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>Una curva indicaría que la tasa de disminución no es constante, sino que cambia a lo largo del tiempo.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_366">Incorrecto</a><span> (<a href="#sa0b9_363">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_369">Incorrecto</a><span> (<a href="#sa1b9_363">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_372">Opción correcta</a><span> (<a href="#sa2b9_363">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_375">Incorrecto</a><span> (<a href="#sa3b9_363">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_378" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_378" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 6.</span></strong> <strong><span style="color: #339966;">De representación gráfica a ecuación algebraica</span></strong><br />La gráfica muestra la producción de leche (en litros) de una vaca durante los primeros días después de parir. ¿Cuál es la ecuación que describe esta producción diaria?</p>
+<p><img src="img0.4.png" width="605" height="479" alt="Produccion de leche vaca" /></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_381" class="sr-av"><a href="#answer-9_381">Opción 1</a></label><input type="radio" name="option9_378" id="i9_381" class="exe-radio-option exe-radio-option-0-4-9_378-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_381"><div id="taans9_381" class="block iDevice_content">
+<p><em>y = </em>10<em>x </em>+ 50</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_384" class="sr-av"><a href="#answer-9_384">Opción 2</a></label><input type="radio" name="option9_378" id="i9_384" class="exe-radio-option exe-radio-option-1-4-9_378-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_384"><div id="taans9_384" class="block iDevice_content">
+<p><em>y = </em>50<em>x </em>+10</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_401" class="sr-av"><a href="#answer-9_401">Opción 3</a></label><input type="radio" name="option9_378" id="i9_401" class="exe-radio-option exe-radio-option-2-4-9_378-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_401"><div id="taans9_401" class="block iDevice_content">
+<p><em>y = </em>−10<em>x </em>+50</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_404" class="sr-av"><a href="#answer-9_404">Opción 4</a></label><input type="radio" name="option9_378" id="i9_404" class="exe-radio-option exe-radio-option-3-4-9_378-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_404"><div id="taans9_404" class="block iDevice_content">
+<p><em>y = </em>5<em>x </em>+ 50</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_378" class="feedback js-hidden">
+<div id="taf9_381" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> Primero, identifica la ordenada al origen (b), que es el punto donde la línea cruza el eje Y. En este caso, es (0, 50), así que<strong><em><span style="color: #339966;"> b = 50.</span></em></strong> Luego, calcula la pendiente (m) usando dos puntos de la gráfica, por ejemplo (0, 50) y (5, 100). m = (100−50)/(5−0) = 50/5 = 10. Con<span style="color: #339966;"><em><strong> m = 10</strong></em></span> y<em><strong><span style="color: #339966;"> b = 50</span></strong></em>, la ecuación es <span style="color: #339966;"><strong><em>y = </em>10<em>x + </em>50</strong></span></p>
+</div>
+</section>
+<section id="sa1b9_378" class="feedback js-hidden">
+<div id="taf9_384" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span> </strong>Se inviertieron los valores de la pendiente y la ordenada al origen.</p>
+</div>
+</section>
+<section id="sa2b9_378" class="feedback js-hidden">
+<div id="taf9_401" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La pendiente es negativa (-10), lo que indicaría una disminución, pero la gráfica muestra un aumento.</p>
+</div>
+</section>
+<section id="sa3b9_378" class="feedback js-hidden">
+<div id="taf9_404" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La pendiente es 5, pero el cálculo muestra que debe ser 10.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_381">Opción correcta</a><span> (<a href="#sa0b9_378">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_384">Incorrecto</a><span> (<a href="#sa1b9_378">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_401">Incorrecto</a><span> (<a href="#sa2b9_378">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_404">Incorrecto</a><span> (<a href="#sa3b9_378">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_407" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_407" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 7. </span><span style="color: #339966;">De representación tabular a descripción verbal.</span></strong></p>
+<p>Una estación meteorológica en la vereda de Juan Frío, registra la temperatura (T en °C) a diferentes horas del día (h), los datos se muestra a continuación:<br /><br /><img src="img0.5.png" width="250" height="171" alt="Tabla clima" /></p>
+<p>¿Cómo describirías el cambio de temperatura según los datos presentados?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_410" class="sr-av"><a href="#answer-9_410">Opción 1</a></label><input type="radio" name="option9_407" id="i9_410" class="exe-radio-option exe-radio-option-0-4-9_407-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_410"><div id="taans9_410" class="block iDevice_content">
+<p>La temperatura disminuye 2°C cada hora.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_413" class="sr-av"><a href="#answer-9_413">Opción 2</a></label><input type="radio" name="option9_407" id="i9_413" class="exe-radio-option exe-radio-option-1-4-9_407-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_413"><div id="taans9_413" class="block iDevice_content">
+<p>La temperatura aumenta 4°C cada hora.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_417" class="sr-av"><a href="#answer-9_417">Opción 3</a></label><input type="radio" name="option9_407" id="i9_417" class="exe-radio-option exe-radio-option-2-4-9_407-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_417"><div id="taans9_417" class="block iDevice_content">
+<p>La temperatura se mantiene constante.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_420" class="sr-av"><a href="#answer-9_420">Opción 4</a></label><input type="radio" name="option9_407" id="i9_420" class="exe-radio-option exe-radio-option-3-4-9_407-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_420"><div id="taans9_420" class="block iDevice_content">
+<p>La temperatura aumenta 2°C cada hora.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_407" class="feedback js-hidden">
+<div id="taf9_410" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong>  Una disminución implicaría una pendiente negativa</p>
+</div>
+</section>
+<section id="sa1b9_407" class="feedback js-hidden">
+<div id="taf9_413" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto</strong></span>. Aunque la diferencia en temperatura entre 6 y 8 horas es 4°C, esto ocurre en un intervalo de 2 horas. La tasa por hora es 2°C.</p>
+</div>
+</section>
+<section id="sa2b9_407" class="feedback js-hidden">
+<div id="taf9_417" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Una temperatura constante implicaría que los valores de temperatura serían los mismos en todas las hora</p>
+</div>
+</section>
+<section id="sa3b9_407" class="feedback js-hidden">
+<div id="taf9_420" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto. </strong></span> Para determinar el cambio, calculamos la pendiente. Tomando los puntos (6, 12) y (8, 16): <em><strong><span style="color: #339966;">m</span></strong></em> = (16−12)/(8−6) = 4/2 = 2. Esto significa que la temperatura <em><span style="color: #339966;"><strong>aumenta 2°C</strong> </span></em>por cada hora que pasa.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_410">Incorrecto</a><span> (<a href="#sa0b9_407">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_413">Incorrecto</a><span> (<a href="#sa1b9_407">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_417">Incorrecto</a><span> (<a href="#sa2b9_407">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_420">Opción correcta</a><span> (<a href="#sa3b9_407">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_423" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_423" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 8.</span></strong> <span style="color: #339966;"><strong>De representación verbal a algebraica.</strong></span></p>
+<p>En Villa del Rosario, el servicio de taxi tiene una "carrera mínima" de $7.000, y por cada kilómetro adicional recorrido después de la mínima, se cobran $1.500. Si <span style="color: #339966;"><em><strong>C</strong></em></span> es el costo total del viaje y <em><strong><span style="color: #339966;">k</span></strong></em> son los kilómetros adicionales, ¿cuál ecuación modela el costo del taxi para una distancia que excede la mínima?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_426" class="sr-av"><a href="#answer-9_426">Opción 1</a></label><input type="radio" name="option9_423" id="i9_426" class="exe-radio-option exe-radio-option-0-4-9_423-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_426"><div id="taans9_426" class="block iDevice_content">
+<p><em>C</em> = 1.500<em>k</em></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_429" class="sr-av"><a href="#answer-9_429">Opción 2</a></label><input type="radio" name="option9_423" id="i9_429" class="exe-radio-option exe-radio-option-1-4-9_423-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_429"><div id="taans9_429" class="block iDevice_content">
+<p><em>C </em>=  7.000 + 1.500<em>k</em></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_432" class="sr-av"><a href="#answer-9_432">Opción 3</a></label><input type="radio" name="option9_423" id="i9_432" class="exe-radio-option exe-radio-option-2-4-9_423-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_432"><div id="taans9_432" class="block iDevice_content">
+<p><em>C</em> = 6000<span style="color: #000000;">k</span> + 1200</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_435" class="sr-av"><a href="#answer-9_435">Opción 4</a></label><input type="radio" name="option9_423" id="i9_435" class="exe-radio-option exe-radio-option-3-4-9_423-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_435"><div id="taans9_435" class="block iDevice_content">
+<p><em>C</em> = 8.500<em>k</em></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_423" class="feedback js-hidden">
+<div id="taf9_426" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto</strong></span>. C=1.500k solo considera el costo por kilómetro adicional, ignorando el costo fijo de la carrera mínima. Si <span style="color: #339966;"><strong><em>k = 0</em> </strong></span>(es decir, solo se paga la mínima), el costo sería 0, lo cual es incorrecto.</p>
+</div>
+</section>
+<section id="sa1b9_423" class="feedback js-hidden">
+<div id="taf9_429" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> La "carrera mínima" de $7.000 es un valor fijo que se paga independientemente de los kilómetros adicionales; esto representa la ordenada al origen <strong><span style="color: #339966;">(b)</span></strong>. Los "$1.500 por cada kilómetro adicional" son la tasa de cambio o pendiente <strong><span style="color: #339966;">(m)</span></strong>. La estructura de una función afín es <strong><span style="color: #339966;"><em>y = mx + b.</em></span></strong></p>
+</div>
+</section>
+<section id="sa2b9_423" class="feedback js-hidden">
+<div id="taf9_432" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong> </span>Esta opción invierte los roles de la pendiente y la ordenada al origen, haciendo que los $7.000 dependan de los kilómetros adicionales y los $1.500 sean un costo fijo único.</p>
+</div>
+</section>
+<section id="sa3b9_423" class="feedback js-hidden">
+<div id="taf9_435" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> C= 8.500k es el resultado de sumar los $7.000 y los $1.500 y multiplicarlos por <em><strong><span style="color: #339966;">k</span></strong></em>. Esto implicaría que el costo fijo también se pagaría por cada kilómetro adicional, lo cual no es lo que describe la situación.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_426">Incorrecto</a><span> (<a href="#sa0b9_423">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_429">Opción correcta</a><span> (<a href="#sa1b9_423">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_432">Incorrecto</a><span> (<a href="#sa2b9_423">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_435">Incorrecto</a><span> (<a href="#sa3b9_423">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_438" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_438" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 9. </span><span style="color: #339966;">De representación tabular a ecuación algebraica.</span></strong></p>
+<p>Un caficultor de Ragonvalia registra la cantidad de café producido (en arrobas) por día, como se muestran a continuación: </p>
+<p><img src="img0.6.png" width="281" height="169" alt="Tabla café" /></p>
+<p>¿Cuál es la ecuación de la función lineal que describe esta producción?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_441" class="sr-av"><a href="#answer-9_441">Opción 1</a></label><input type="radio" name="option9_438" id="i9_441" class="exe-radio-option exe-radio-option-0-4-9_438-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_441"><div id="taans9_441" class="block iDevice_content">
+<p><em> y</em> = 5<em>x</em> + 5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_444" class="sr-av"><a href="#answer-9_444">Opción 2</a></label><input type="radio" name="option9_438" id="i9_444" class="exe-radio-option exe-radio-option-1-4-9_438-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_444"><div id="taans9_444" class="block iDevice_content">
+<p><em>y</em> = 10<em>x</em> − 5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_448" class="sr-av"><a href="#answer-9_448">Opción 3</a></label><input type="radio" name="option9_438" id="i9_448" class="exe-radio-option exe-radio-option-2-4-9_438-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_448"><div id="taans9_448" class="block iDevice_content">
+<p><em>y</em> = 5<em>x</em> + 10</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_451" class="sr-av"><a href="#answer-9_451">Opción 4</a></label><input type="radio" name="option9_438" id="i9_451" class="exe-radio-option exe-radio-option-3-4-9_438-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_451"><div id="taans9_451" class="block iDevice_content">
+<p><em>y</em> = 5<em>x</em></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_438" class="feedback js-hidden">
+<div id="taf9_441" class=" iDevice_content">
+<p><strong><span style="color: #339966;">Correcto.</span> </strong>Al calcular la pendiente <strong><em><span style="color: #339966;">(m)</span> </em></strong>usando dos puntos de la tabla, por ejemplo, (2, 15) y (4, 25): <em><strong><span style="color: #339966;">m </span></strong></em>=(25−15)/(4−2) = 10/2 = 5. Ahora, para encontrar la ordenada al origen <em><strong><span style="color: #339966;">(b)</span></strong></em>, podemos usar la fórmula <em><strong><span style="color: #339966;">y = mx + b</span></strong></em> con uno de los puntos y la pendiente. Usando (2, 15) queda reemplazado de la siguiente manera:  15 = 5(2) + b ⟹ 15 =10 + b ⟹ b = 5. Así, la ecuación es <span style="color: #339966;"><em><strong>y = 5x + 5.</strong></em></span></p>
+</div>
+</section>
+<section id="sa1b9_438" class="feedback js-hidden">
+<div id="taf9_444" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> La pendiente sería 10, lo cual es incorrecto, y la ordenada al origen también sería incorrecta.</p>
+</div>
+</section>
+<section id="sa2b9_438" class="feedback js-hidden">
+<div id="taf9_448" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto</strong></span>. La pendiente es correcta, pero la ordenada al origen es incorrecta.</p>
+</div>
+</section>
+<section id="sa3b9_438" class="feedback js-hidden">
+<div id="taf9_451" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto. </span></strong>y = 5x es una función lineal pura que pasa por el origen. Si sustituimos x = 2 en y = 5x, obtenemos y = 10, que no coincide con y = 15 en la tabla.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_441">Opción correcta</a><span> (<a href="#sa0b9_438">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_444">Incorrecto</a><span> (<a href="#sa1b9_438">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_448">Incorrecto</a><span> (<a href="#sa2b9_438">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_451">Incorrecto</a><span> (<a href="#sa3b9_438">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_457" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_457" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 10.</span></strong> <strong><span style="color: #339966;">Identificación de función.<br /></span></strong><br />En el mercado de La Parada, el precio de un kilo de yuca es $3.500. Si <strong><em><span style="color: #339966;">P</span></em></strong> es el precio total a pagar y <em><strong><span style="color: #339966;">k</span></strong></em> es la cantidad de kilos comprados, ¿qué tipo de función describe el precio total en relación con la cantidad de kilos?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_460" class="sr-av"><a href="#answer-9_460">Opción 1</a></label><input type="radio" name="option9_457" id="i9_460" class="exe-radio-option exe-radio-option-0-4-9_457-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_460"><div id="taans9_460" class="block iDevice_content">
+<p>Función afín</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_463" class="sr-av"><a href="#answer-9_463">Opción 2</a></label><input type="radio" name="option9_457" id="i9_463" class="exe-radio-option exe-radio-option-1-4-9_457-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_463"><div id="taans9_463" class="block iDevice_content">
+<p> Función lineal.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_466" class="sr-av"><a href="#answer-9_466">Opción 3</a></label><input type="radio" name="option9_457" id="i9_466" class="exe-radio-option exe-radio-option-2-4-9_457-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_466"><div id="taans9_466" class="block iDevice_content">
+<p>Función constante</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_469" class="sr-av"><a href="#answer-9_469">Opción 4</a></label><input type="radio" name="option9_457" id="i9_469" class="exe-radio-option exe-radio-option-3-4-9_457-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_469"><div id="taans9_469" class="block iDevice_content">
+<p>Función cuadrática</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_457" class="feedback js-hidden">
+<div id="taf9_460" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>Una función afín tendría la forma y=mx+b con b ≠ 0 (es decir, tendría un costo fijo o inicial adicional)</p>
+</div>
+</section>
+<section id="sa1b9_457" class="feedback js-hidden">
+<div id="taf9_463" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> La relación se expresa como<em> P =</em> 3.500<em>k</em>. Esta es la forma <strong><span style="color: #339966;"><em>y = mx</em></span></strong>, donde<em><strong><span style="color: #339966;"> m</span></strong></em> = 2500 y la ordenada al origen <span style="color: #339966;"><strong>(b)</strong></span> es 0. Una función de este tipo, que pasa por el origen, se denomina función lineal pura</p>
+</div>
+</section>
+<section id="sa2b9_457" class="feedback js-hidden">
+<div id="taf9_466" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Una función constante significaría que el precio total es siempre $3.500, sin importar cuántos kilos se compren.</p>
+</div>
+</section>
+<section id="sa3b9_457" class="feedback js-hidden">
+<div id="taf9_469" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> Una función cuadrática involucraría el cuadrado de la variable al cuadrado, lo cual no aplica a esta situación.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_460">Incorrecto</a><span> (<a href="#sa0b9_457">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_463">Opción correcta</a><span> (<a href="#sa1b9_457">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_466">Incorrecto</a><span> (<a href="#sa2b9_457">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_469">Incorrecto</a><span> (<a href="#sa3b9_457">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_488" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_488" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 11.</span> <span style="color: #339966;">De Gráfica a ecuación algebraica</span></strong></p>
+<p>La gráfica muestra la altura (en metros) de un árbol de mango en Cúcuta a lo largo de los años. ¿Cuál es la ecuación que describe esta altura?</p>
+<p><img src="crecimiento_arbol_mango.png" width="589" height="393" alt="crecimiento arbol de mango" /></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_491" class="sr-av"><a href="#answer-9_491">Opción 1</a></label><input type="radio" name="option9_488" id="i9_491" class="exe-radio-option exe-radio-option-0-4-9_488-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_491"><div id="taans9_491" class="block iDevice_content">
+<p><em>y</em> = 0.5<em>x</em> + 0.5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_494" class="sr-av"><a href="#answer-9_494">Opción 2</a></label><input type="radio" name="option9_488" id="i9_494" class="exe-radio-option exe-radio-option-1-4-9_488-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_494"><div id="taans9_494" class="block iDevice_content">
+<p><em>y</em> = 0.5<em>x</em> + 1</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_497" class="sr-av"><a href="#answer-9_497">Opción 3</a></label><input type="radio" name="option9_488" id="i9_497" class="exe-radio-option exe-radio-option-2-4-9_488-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_497"><div id="taans9_497" class="block iDevice_content">
+<p><em>y</em> = 2<em>x</em> + 0.5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_500" class="sr-av"><a href="#answer-9_500">Opción 4</a></label><input type="radio" name="option9_488" id="i9_500" class="exe-radio-option exe-radio-option-3-4-9_488-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_500"><div id="taans9_500" class="block iDevice_content">
+<p><em> y</em> = 0.5<em>x</em> + 2.5</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_488" class="feedback js-hidden">
+<div id="taf9_491" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> Se identifica la ordenada al origen <strong><em><span style="color: #339966;">(b)</span></em></strong>, que es el punto donde la recta cruza el eje Y. En la gráfica, el árbol inicia con 0.5 metros de altura cuando<span style="color: #339966;"><strong><em> x = 0</em></strong></span> (0 años), así que <em><strong><span style="color: #339966;">b=0.5</span></strong></em>. Luego, se calcula la pendiente <em><strong><span style="color: #339966;">(m)</span></strong></em> usando dos puntos, por ejemplo (0, 0.5) y (4, 2.5): <em><span style="color: #339966;"><strong>m =</strong></span></em> (2.5−0.5)/(4−0) = 2/4=0.5. Con <em><strong><span style="color: #339966;">m=0.5</span></strong></em> y<strong><em><span style="color: #339966;"> b=0.5</span></em></strong>, la ecuación es <span style="color: #339966;"><strong><em>y= 0.5x + 0.5</em></strong></span>.</p>
+</div>
+</section>
+<section id="sa1b9_488" class="feedback js-hidden">
+<div id="taf9_494" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong> </span>La ordenada al origen es incorrecta (sería 1).</p>
+</div>
+</section>
+<section id="sa2b9_488" class="feedback js-hidden">
+<div id="taf9_497" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> La pendiente es incorrecta (sería 2, lo que indicaría un crecimiento mucho más rápido).</p>
+</div>
+</section>
+<section id="sa3b9_488" class="feedback js-hidden">
+<div id="taf9_500" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La ordenada al origen es incorrecta (sería 2.5, que es la altura a los 4 años, no al inicio).</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_491">Opción correcta</a><span> (<a href="#sa0b9_488">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_494">Incorrecto</a><span> (<a href="#sa1b9_488">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_497">Incorrecto</a><span> (<a href="#sa2b9_488">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_500">Incorrecto</a><span> (<a href="#sa3b9_488">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_520" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_520" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 12.</span></strong> <strong><span style="color: #339966;">Reconocimiento de incoherencia semiótica.</span></strong></p>
+<p>¿Cuál de las siguientes combinaciones de representaciones <span style="color: #ff6600;"><strong>NO</strong></span> corresponde a la misma situación?<br /><br /></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_523" class="sr-av"><a href="#answer-9_523">Opción 1</a></label><input type="radio" name="option9_520" id="i9_523" class="exe-radio-option exe-radio-option-0-4-9_520-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_523"><div id="taans9_523" class="block iDevice_content">
+<p><strong><span style="color: #008000;">Ecuación:</span></strong> P = 10000 − 50t <span style="color: #000000;">(donde </span>P es población y t son años).<br /><strong><span style="color: #008000;">Verbal:</span> </strong>"La población de Gramalote es 10.000 habitantes y disminuye en 50 personas cada año."</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_526" class="sr-av"><a href="#answer-9_526">Opción 2</a></label><input type="radio" name="option9_520" id="i9_526" class="exe-radio-option exe-radio-option-1-4-9_520-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_526"><div id="taans9_526" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Tabla: </strong></span><br /><img src="img0.7.png" width="201" height="126" alt="Tabla funcion lineal " /></p>
+<p><strong><span style="color: #339966;">Ecuación:</span> </strong>y = 25x (representando el llenado de un tanque de agua en una finca).</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_563" class="sr-av"><a href="#answer-9_563">Opción 3</a></label><input type="radio" name="option9_520" id="i9_563" class="exe-radio-option exe-radio-option-2-4-9_520-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_563"><div id="taans9_563" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Gráfica: </strong></span><br /><img src="img0.17.png" width="664" height="481" alt="Recta aumenta 100" /></p>
+<p><span style="color: #339966;"><strong>Verbal. </strong></span>El precio de un producto local empieza en $100 y aumenta constantemente.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_567" class="sr-av"><a href="#answer-9_567">Opción 4</a></label><input type="radio" name="option9_520" id="i9_567" class="exe-radio-option exe-radio-option-3-4-9_520-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_567"><div id="taans9_567" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Gráfica: <br /></strong></span><img src="img0.16.png" width="598" height="478" alt="Recta descendente" /><br /><br /><span style="color: #339966;"><strong>Ecuación:</strong></span> y = 50x (representando el número de animales en una granja).</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_520" class="feedback js-hidden">
+<div id="taf9_523" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>La descripción verbal ("10.000 habitantes" como valor inicial y "disminuye en 50" como pendiente negativa)  dando como ecuación: ecuación P=10000−50t. Esta afirmación es correcta y por tanto, según la pregunta se está pidiendo la que <span style="color: #339966;"><strong>NO</strong> </span>es correcta. </p>
+</div>
+</section>
+<section id="sa1b9_520" class="feedback js-hidden">
+<div id="taf9_526" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong> </span>La tabla muestra una pendiente de (25−0)/(1−0)=25 y una ordenada al origen de 0. La ecuación seria y = 25x. Esta afirmación es correcta y por tanto, según la pregunta se está pidiendo la que<strong><span style="color: #339966;"> NO</span></strong> es correcta. </p>
+</div>
+</section>
+<section id="sa2b9_520" class="feedback js-hidden">
+<div id="taf9_563" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>Una recta que asciende (pendiente positiva) y pasa por (0,100) es coherente con una descripción verbal de un precio que "empieza en $100" (ordenada al origen) y "aumenta constantemente" (pendiente positiva). Esta afirmación es<span style="color: #000000;"> correcta </span>y por tanto, según la pregunta se está pidiendo la que <strong><span style="color: #339966;">NO</span></strong> es correcta. </p>
+</div>
+</section>
+<section id="sa3b9_520" class="feedback js-hidden">
+<div id="taf9_567" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> Hay una clara inconsistencia. La gráfica describe una función con una <span style="color: #339966;"><em><strong>pendiente negativa</strong></em></span> (<span style="color: #000000;">desciende)</span> y una ordenada al origen de 50 (pasa por (0,50)). En contraste, la ecuación y = 50x describe una función con una <strong><em><span style="color: #339966;">pendiente positiva</span></em></strong> (50) y una ordenada al origen de 0 (pasa por el origen (0,0)). Estas dos representaciones <strong><span style="color: #ff0000;">NO</span></strong> pueden describir la misma situación.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_523">Incorrecto</a><span> (<a href="#sa0b9_520">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_526">Incorrecto</a><span> (<a href="#sa1b9_520">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_563">Incorrecto</a><span> (<a href="#sa2b9_520">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_567">Opción correcta</a><span> (<a href="#sa3b9_520">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_572" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_572" class="block question iDevice_content">
+<p><span style="color: #ff6600;"><strong>Ejercicio 13</strong></span>. <span style="color: #339966;"><strong>Reconocimiento de incoherencia semiótica.<br /></strong></span><br />¿Cuál de las siguientes combinaciones de representaciones <span style="color: #ff6600;"><strong>NO</strong> </span>describe la misma situación sobre la población de animales en una finca en Villa del Rosario?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_575" class="sr-av"><a href="#answer-9_575">Opción 1</a></label><input type="radio" name="option9_572" id="i9_575" class="exe-radio-option exe-radio-option-0-4-9_572-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_575"><div id="taans9_575" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Gráfica</span></strong>:  <img src="img1.2.png" width="566" height="446" alt="relación tiempo animales" /><br /><span style="color: #339966;"><strong>Tabla: </strong></span><br /><img src="img0.8.png" width="278" height="159" alt="Tabla izquierda derecha" /></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_578" class="sr-av"><a href="#answer-9_578">Opción 2</a></label><input type="radio" name="option9_572" id="i9_578" class="exe-radio-option exe-radio-option-1-4-9_572-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_578"><div id="taans9_578" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> N=50+5t (donde N es el número de animales y t es el tiempo en meses)</p>
+<p><span style="color: #339966;"><strong>Verbal:</strong></span> La finca comenzó con 50 animales y la población crece en 5 animales por mes</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_581" class="sr-av"><a href="#answer-9_581">Opción 3</a></label><input type="radio" name="option9_572" id="i9_581" class="exe-radio-option exe-radio-option-2-4-9_572-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_581"><div id="taans9_581" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Tabla: </span></strong></p>
+<p><img src="img0.9.png" width="276" height="148" alt="Meses y animales" /></p>
+<p><strong><span style="color: #339966;">Ecuación:</span></strong> N = −10t + 100 (representando una disminución de animales).</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_585" class="sr-av"><a href="#answer-9_585">Opción 4</a></label><input type="radio" name="option9_572" id="i9_585" class="exe-radio-option exe-radio-option-3-4-9_572-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_585"><div id="taans9_585" class="block iDevice_content">
+<p><span style="color: #339966;"><strong style="font-size: 1.05em;">Gráfica: </strong></span></p>
+<p><span style="color: #339966;"><strong><img src="img0.19.png" width="661" height="521" alt="Gallinas 75" /></strong></span><br /><strong><span style="color: #339966;">Verbal:</span></strong> El número de gallinas ponedoras se mantiene constante en 75.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_572" class="feedback js-hidden">
+<div id="taf9_575" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto. </strong></span> La Gráfica muestra un valor inicial de 200 animales (pasa por (0,200)) y una tendencia de disminución (<em><span style="color: #339966;"><strong>pendiente negativa</strong></span></em>). Sin embargo, la Tabla indica un valor inicial de 0 animales (cuando t=0, N=0) y una tendencia de aumento (de 0 a 100 en 2 meses, lo que es una<em><strong><span style="color: #339966;"> pendiente positiva</span></strong></em>). Estas dos representaciones son totalmente inconsistentes. Por tanto, cumple con la condición de la pregunta. </p>
+</div>
+</section>
+<section id="sa1b9_572" class="feedback js-hidden">
+<div id="taf9_578" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecta.</strong></span> La descripción verbal ("comenzó con 50 animales" es b=50, y "crece en 5 animales por mes" es m=5) es coherente con la ecuación N = 50 + 5t. Esta afirmación es correcta y por tanto, según la pregunta se está pidiendo la que<strong><span style="color: #339966;"> NO</span></strong> es correcta. </p>
+</div>
+</section>
+<section id="sa2b9_572" class="feedback js-hidden">
+<div id="taf9_581" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> De la tabla, la pendiente es (90−100)/(1−0)= −10/1 = −10. La ordenada al origen es 100. La ecuación N = −10t + 100 es coherente con esto. Esta afirmación es correcta y por tanto, según la pregunta se está pidiendo la que <span style="color: #339966;"><strong>NO</strong></span> es correcta.</p>
+</div>
+</section>
+<section id="sa3b9_572" class="feedback js-hidden">
+<div id="taf9_585" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Una recta horizontal en N = 75 significa que el número de animales es constante en 75. La descripción verbal "se mantiene constante en 75" es perfectamente coherente. Esta afirmación es correcta y por tanto, según la pregunta se está pidiendo la que <span style="color: #339966;"><strong>NO</strong> </span>es correcta. </p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_575">Opción correcta</a><span> (<a href="#sa0b9_572">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_578">Incorrecto</a><span> (<a href="#sa1b9_572">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_581">Incorrecto</a><span> (<a href="#sa2b9_572">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_585">Incorrecto</a><span> (<a href="#sa3b9_572">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_613" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_613" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 14.</span> <span style="color: #339966;">Reconocimiento de la representación semiótica.</span></strong></p>
+<p>Un hacendado en Villa del Rosario alquila caballerizas. Si tiene 120 caballerizas disponibles y cada mes se alquilan 5 caballerizas, ¿cuántas caballerizas quedan disponibles con el paso del tiempo?</p>
+<p>¿Cuál de las siguientes opciones representa consistentemente esta situación?</p>
+<p></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_616" class="sr-av"><a href="#answer-9_616">Opción 1</a></label><input type="radio" name="option9_613" id="i9_616" class="exe-radio-option exe-radio-option-0-4-9_613-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_616"><div id="taans9_616" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong> </span>El número de caballerizas disponibles es de 120 y aumenta en 5 cada mes.</p>
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> D = 120 + 5m</p>
+<p><strong><span style="color: #339966;">Gráfica:</span></strong></p>
+<p><img src="img0.18.png" width="662" height="522" alt="Recta ascendente caballerizas" /></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_619" class="sr-av"><a href="#answer-9_619">Opción 2</a></label><input type="radio" name="option9_613" id="i9_619" class="exe-radio-option exe-radio-option-1-4-9_613-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_619"><div id="taans9_619" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Verbal:</span></strong> El número de caballerizas disponibles disminuye 5 unidades cada mes, partiendo de 120.</p>
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> D = 120−5m.</p>
+<p><span style="color: #339966;"><strong>Tabla:<br /><img src="img0.10.png" width="261" height="127" alt="meses disponibles" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_622" class="sr-av"><a href="#answer-9_622">Opción 3</a></label><input type="radio" name="option9_613" id="i9_622" class="exe-radio-option exe-radio-option-2-4-9_613-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_622"><div id="taans9_622" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong></span> El número de caballerizas es siempre 5.<br /><br /><span style="color: #339966;"><strong>Ecuación:</strong></span> D = 5<br /><br /><span style="color: #339966;"><strong>Gráfica:</strong></span></p>
+<p><span style="color: #339966;"><strong><img src="img0.20.png" width="659" height="528" alt="caballerizas de 5" /></strong></span></p>
+<p>  </p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_627" class="sr-av"><a href="#answer-9_627">Opción 4</a></label><input type="radio" name="option9_613" id="i9_627" class="exe-radio-option exe-radio-option-3-4-9_613-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_627"><div id="taans9_627" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong></span> El número de caballerizas disminuye 120 unidades cada mes, partiendo de 5.<br /><br /><span style="color: #339966;"><strong>Ecuación:</strong> </span>D = 5−120m.</p>
+<p><span style="color: #339966;"><strong>Tabla: </strong></span><br /><img src="img0.11.png" width="310" height="114" alt="tabla" /></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_613" class="feedback js-hidden">
+<div id="taf9_616" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> La descripción verbal, la ecuación y la gráfica implican un aumento en el número de caballerizas disponibles, lo cual contradice la situación de alquiler y disminución.</p>
+</div>
+</section>
+<section id="sa1b9_613" class="feedback js-hidden">
+<div id="taf9_619" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto. </strong></span>La descripción verbal "El número de caballerizas disponibles disminuye 5 unidades cada mes, partiendo de 120" es una interpretación directa de la situación. La ecuación D = 120 − 5m tiene la ordenada al origen de 120 (inicio) y una pendiente de -5 (disminución de 5 por mes). La tabla es coherente con esta ecuación: en el mes 0, hay 120 disponibles; en el mes 1, 120 − 5(1) = 115; en el mes 2, 120 − 5(2) = 110. Todas las representaciones se validan entre sí. Por lo que cumple con la condición de la pregunta. </p>
+</div>
+</section>
+<section id="sa2b9_613" class="feedback js-hidden">
+<div id="taf9_622" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Esta opción implica que el número de caballerizas es constante en 5, lo cual es incorrecto y no refleja la situación de partida o disminución.</p>
+</div>
+</section>
+<section id="sa3b9_613" class="feedback js-hidden">
+<div id="taf9_627" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> La descripción verbal y las representaciones implican una disminución drástica desde un inicio muy bajo (5), lo cual no coincide con tener 120 caballerizas disponibles al principio y una disminución de solo 5 por mes.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_616">Incorrecto</a><span> (<a href="#sa0b9_613">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_619">Opción correcta</a><span> (<a href="#sa1b9_613">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_622">Incorrecto</a><span> (<a href="#sa2b9_613">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_627">Incorrecto</a><span> (<a href="#sa3b9_613">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_657" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_657" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 15</span></strong>. <strong><span style="color: #339966;">Reconocimiento de la representación semiótica.</span></strong></p>
+<p>En una zona rural de Villa del Rosario, durante la temporada de lluvias, el nivel de una quebrada comienza en 0.2 metros y aumenta 0.1 metros cada hora debido a la precipitación constante.</p>
+<p>¿Cuál de las siguientes opciones representa consistentemente esta situación?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_660" class="sr-av"><a href="#answer-9_660">Opción 1</a></label><input type="radio" name="option9_657" id="i9_660" class="exe-radio-option exe-radio-option-0-4-9_657-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_660"><div id="taans9_660" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Verbal:</span></strong> El nivel de la quebrada disminuye 0.1 metros por hora desde un inicio de 0.2 metros.</p>
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> N = 0.2 − 0.1t</p>
+<p><span style="color: #339966;"><strong>Gráfica:</strong></span></p>
+<p><span style="color: #339966;"><strong><img src="img0.15.png" width="656" height="511" alt="Recta descendente 02 -01t" /></strong></span></p>
+<p></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_663" class="sr-av"><a href="#answer-9_663">Opción 2</a></label><input type="radio" name="option9_657" id="i9_663" class="exe-radio-option exe-radio-option-1-4-9_657-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_663"><div id="taans9_663" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong> </span>El nivel de la quebrada es constante en 0.2 metros.</p>
+<p><strong><span style="color: #339966;">Ecuación</span></strong>: N=0.2</p>
+<p><span style="color: #339966;"><strong>Tabla:<br /><img src="img0.12.png" width="217" height="149" alt="tabla nivel" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_666" class="sr-av"><a href="#answer-9_666">Opción 3</a></label><input type="radio" name="option9_657" id="i9_666" class="exe-radio-option exe-radio-option-2-4-9_657-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_666"><div id="taans9_666" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong> </span>El nivel de la quebrada inicia en 0.2 metros y sube 0.1 metros cada hora.</p>
+<p><span style="color: #339966;"><strong>Ecuación</strong></span>: N = 0.1t + 0.2</p>
+<p><strong><span style="color: #339966;">Gráfica:</span></strong></p>
+<p><strong><span style="color: #339966;"> <img src="img0.14.png" width="656" height="520" alt="Grafica n = 0.1t + 0.2" /></span></strong></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_670" class="sr-av"><a href="#answer-9_670">Opción 4</a></label><input type="radio" name="option9_657" id="i9_670" class="exe-radio-option exe-radio-option-3-4-9_657-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_670"><div id="taans9_670" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Verbal:</strong></span> El nivel de la quebrada es de 0.1 metros por hora, sin nivel inicial.</p>
+<p><strong><span style="color: #339966;">Ecuación:</span></strong> N = 0.1t</p>
+<p><span style="color: #339966;"><strong>Tabla:<br /><img src="img0.13.png" width="213" height="135" alt="tabla creciente 0,1" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_657" class="feedback js-hidden">
+<div id="taf9_660" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La descripción verbal y la ecuación (N = 0.2 − 0.1t) implican una disminución (<strong><em><span style="color: #339966;">pendiente negativa</span></em></strong>), lo cual contradice la situación original de un aumento del nivel.</p>
+</div>
+</section>
+<section id="sa1b9_657" class="feedback js-hidden">
+<div id="taf9_663" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> La descripción verbal y las representaciones implican un nivel constante, lo cual contradice el aumento constante descrito en la situación original.</p>
+</div>
+</section>
+<section id="sa2b9_657" class="feedback js-hidden">
+<div id="taf9_666" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong> </span>La descripción verbal "El nivel de la quebrada inicia en 0.2 metros" establece la ordenada al origen (b = 0.2). "Sube 0.1 metros cada hora" establece la pendiente positiva (m = 0.1). La ecuación N = 0.1t + 0.2 es una representación algebraica directa. La gráfica que asciende y pasa por (0, 0.2) es la representación visual precisa de esta función afín creciente. Todas las representaciones son coherentes entre sí. </p>
+</div>
+</section>
+<section id="sa3b9_657" class="feedback js-hidden">
+<div id="taf9_670" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Aunque el crecimiento es de 0.1 metros por hora, la descripción y las representaciones indican que el nivel inicial es cero, lo que contradice el "comienza en 0.2 metros" de la situación planteada. </p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_660">Incorrecto</a><span> (<a href="#sa0b9_657">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_663">Incorrecto</a><span> (<a href="#sa1b9_657">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_666">Opción correcta</a><span> (<a href="#sa2b9_657">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_670">Incorrecto</a><span> (<a href="#sa3b9_657">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_2194" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_2194" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 16.</span> <span style="color: #339966;">Reconocimiento de la representación semiótica.</span></strong></p>
+<p>El caudal del río Zulia se encuentra en 80 metros cúbicos por segundo (m³/s) y, debido a la sequía, disminuye a una tasa constante de 2 m³/s cada día. ¿Cuál de las siguientes representaciones describe de forma coherente esta situación?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2197" class="sr-av"><a href="#answer-9_2197">Opción 1</a></label><input type="radio" name="option9_2194" id="i9_2197" class="exe-radio-option exe-radio-option-0-4-9_2194-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2197"><div id="taans9_2197" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> <strong><em><span style="color: #ff6600;">C = 2t + 80</span></em></strong> (donde <em><strong><span style="color: #ff6600;">C</span></strong></em> es el caudal y <strong><em><span style="color: #ff6600;">t</span></em></strong> son los días) <br /><span style="color: #339966;"><strong><br />Gráfica:<br /><img src="img0.24.png" width="597" height="471" alt="recta ascente 0,80" /><br /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2200" class="sr-av"><a href="#answer-9_2200">Opción 2</a></label><input type="radio" name="option9_2194" id="i9_2200" class="exe-radio-option exe-radio-option-1-4-9_2194-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2200"><div id="taans9_2200" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong> </span><span style="color: #ff6600;"><em><strong>C = 80t − 2</strong></em></span> (donde <em><strong><span style="color: #ff6600;">C</span></strong></em> es el caudal y <span style="color: #ff6600;"><em><strong>t</strong> </em></span>son los días) </p>
+<p><strong><span style="color: #339966;">Gráfica: <br /><img src="img0.21.png" width="596" height="460" alt="Recta con pendiente pendiente positiva" /><br /></span></strong></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2203" class="sr-av"><a href="#answer-9_2203">Opción 3</a></label><input type="radio" name="option9_2194" id="i9_2203" class="exe-radio-option exe-radio-option-2-4-9_2194-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2203"><div id="taans9_2203" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong> </span><strong><em><span style="color: #ff6600;">C = 80 − 2t</span></em> </strong>(donde <span style="color: #ff6600;"><em><strong>C</strong></em></span> es el caudal y <em><strong><span style="color: #ff6600;">t</span></strong></em> son los días) </p>
+<p><span style="color: #339966;"><strong> Tabla:<br /><img src="img0.22.png" width="300" height="165" alt="Tabla 2" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2208" class="sr-av"><a href="#answer-9_2208">Opción 4</a></label><input type="radio" name="option9_2194" id="i9_2208" class="exe-radio-option exe-radio-option-3-4-9_2194-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2208"><div id="taans9_2208" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Ecuación:</span> <em><span style="color: #ff6600;">C = 2t − 80</span></em></strong> (donde <span style="color: #ff6600;"><em><strong>C</strong></em></span> es el caudal y <em><strong><span style="color: #ff6600;">t</span></strong></em> son los días) </p>
+<p><span style="color: #339966;"><strong> Tabla:<br /><img src="img0.23.png" width="304" height="163" alt="tabla 3" /><br /></strong></span></p>
+<p><span style="color: #339966;"><strong></strong></span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_2194" class="feedback js-hidden">
+<div id="taf9_2197" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La ecuación tiene una pendiente positiva (m=2), lo que indica un aumento del caudal, no una disminución.</p>
+</div>
+</section>
+<section id="sa1b9_2194" class="feedback js-hidden">
+<div id="taf9_2200" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorecto.</span></strong> Aunque tiene una pendiente positiva, el valor inicial es -2, lo cual no es coherente con el caudal de 80 m³/s al inicio.</p>
+</div>
+</section>
+<section id="sa2b9_2194" class="feedback js-hidden">
+<div id="taf9_2203" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong></span> La situación describe un valor inicial de 80 y una disminución de 2 por día. La ecuación <em><strong><span style="color: #ff6600;">C = 80 − 2t</span></strong></em> modela esto con una ordenada al origen de 80 y una pendiente negativa de -2. La tabla es coherente, mostrando que a los 0 días el caudal es 80, y luego disminuye 2 unidades por cada día que pasa</p>
+</div>
+</section>
+<section id="sa3b9_2194" class="feedback js-hidden">
+<div id="taf9_2208" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> La ecuación tiene una pendiente positiva (m=2), y el valor inicial es -80, lo cual es incoherente con el contexto.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_2197">Incorrecto</a><span> (<a href="#sa0b9_2194">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2200">Incorrecto</a><span> (<a href="#sa1b9_2194">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2203">Opción correcta</a><span> (<a href="#sa2b9_2194">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2208">Incorrecto</a><span> (<a href="#sa3b9_2194">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_2214" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_2214" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 17.</span></strong>  <span style="color: #339966;"><strong>Reconocimiento de la representación semiótica.</strong></span></p>
+<p>El tanque de gasolina de un vehículo tiene 50 litros de combustible. Después de un viaje, se observa que ha consumido 5 litros por cada 40 kilómetros recorridos. ¿Cuál de las siguientes opciones representa esta situación?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2217" class="sr-av"><a href="#answer-9_2217">Opción 1</a></label><input type="radio" name="option9_2214" id="i9_2217" class="exe-radio-option exe-radio-option-0-4-9_2214-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2217"><div id="taans9_2217" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> G = 50 + 0.125k</p>
+<p><span style="color: #339966;"><strong>Gráfica:<br /><img src="img0.26.png" width="593" height="474" alt="Recta ascendente g=50 + 0.125" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2220" class="sr-av"><a href="#answer-9_2220">Opción 2</a></label><input type="radio" name="option9_2214" id="i9_2220" class="exe-radio-option exe-radio-option-1-4-9_2214-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2220"><div id="taans9_2220" class="block iDevice_content">
+<p><strong><span style="color: #339966;">Ecuación:</span> </strong>G = 50 − 0.125k </p>
+<p><span style="color: #339966;"><strong>Tabla:<br /><img src="img0.25.png" width="270" height="153" alt="Tabla 4" /><br /></strong></span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2223" class="sr-av"><a href="#answer-9_2223">Opción 3</a></label><input type="radio" name="option9_2214" id="i9_2223" class="exe-radio-option exe-radio-option-2-4-9_2214-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2223"><div id="taans9_2223" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Ecuación:</strong></span> G=5k+40 </p>
+<p><span style="color: #339966;"><strong>Representación verbal:</strong> </span>El tanque tiene 40 litros y el consumo es de 5 litros por km.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2228" class="sr-av"><a href="#answer-9_2228">Opción 4</a></label><input type="radio" name="option9_2214" id="i9_2228" class="exe-radio-option exe-radio-option-3-4-9_2214-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2228"><div id="taans9_2228" class="block iDevice_content">
+<p><span style="color: #339966;"><strong>Representación Gráfica:</strong></span></p>
+<p><span style="color: #339966;"><strong><img src="img0.27.png" width="597" height="471" alt="Recta descendete con pendiente -5" /></strong></span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_2214" class="feedback js-hidden">
+<div id="taf9_2217" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>La ecuación tiene una pendiente positiva, lo que indica que la gasolina aumenta en lugar de consumirse.</p>
+</div>
+</section>
+<section id="sa1b9_2214" class="feedback js-hidden">
+<div id="taf9_2220" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong> </span>El vehículo comienza con 50 litros (ordenada al origen, b=50). El consumo es una disminución, por lo que la pendiente es negativa. La tasa de consumo es de 5 litros por cada 40 km, lo que equivale a una pendiente de m=−5/40=−0.125 litros/km. La ecuación G=50−0.125k y la tabla que muestra la disminución de 5 litros por cada 40 km recorridos son coherentes.</p>
+</div>
+</section>
+<section id="sa2b9_2214" class="feedback js-hidden">
+<div id="taf9_2223" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>La ecuación G=5k+40 tiene una pendiente incorrecta (5 en lugar de 0.125) y una ordenada al origen incorrecta (40 en lugar de 50).</p>
+</div>
+</section>
+<section id="sa3b9_2214" class="feedback js-hidden">
+<div id="taf9_2228" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto. </strong></span>Aunque la gráfica desciende, lo que es correcto, el valor inicial es 40, no 50.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_2217">Incorrecto</a><span> (<a href="#sa0b9_2214">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2220">Opción correcta</a><span> (<a href="#sa1b9_2214">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2223">Incorrecto</a><span> (<a href="#sa2b9_2214">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2228">Incorrecto</a><span> (<a href="#sa3b9_2214">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_2387" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_2387" class="block question iDevice_content">
+<p><span style="color: #ff6600;"><strong>Ejercicio 18. </strong></span><span style="color: #339966;"><strong>Hallar la pendiente. </strong></span></p>
+<p>El costo de transporte de un camión que sale de Villa del Rosario a Cúcuta incluye una tarifa base de $20.000, más un costo adicional de $500 por cada kilómetro recorrido. ¿Cuál es la pendiente de la función que determina el costo total del transporte (C) en función de los kilómetros recorridos (k)?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2390" class="sr-av"><a href="#answer-9_2390">Opción 1</a></label><input type="radio" name="option9_2387" id="i9_2390" class="exe-radio-option exe-radio-option-0-4-9_2387-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2390"><div id="taans9_2390" class="block iDevice_content">
+<p>20,000</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2393" class="sr-av"><a href="#answer-9_2393">Opción 2</a></label><input type="radio" name="option9_2387" id="i9_2393" class="exe-radio-option exe-radio-option-1-4-9_2387-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2393"><div id="taans9_2393" class="block iDevice_content">
+<p>500</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2408" class="sr-av"><a href="#answer-9_2408">Opción 3</a></label><input type="radio" name="option9_2387" id="i9_2408" class="exe-radio-option exe-radio-option-2-4-9_2387-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2408"><div id="taans9_2408" class="block iDevice_content">
+<p>-20,000</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2411" class="sr-av"><a href="#answer-9_2411">Opción 4</a></label><input type="radio" name="option9_2387" id="i9_2411" class="exe-radio-option exe-radio-option-3-4-9_2387-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2411"><div id="taans9_2411" class="block iDevice_content">
+<p>-500</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_2387" class="feedback js-hidden">
+<div id="taf9_2390" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Este valor es la tarifa base, la cual es un costo fijo (la ordenada al origen), no la pendiente.</p>
+</div>
+</section>
+<section id="sa1b9_2387" class="feedback js-hidden">
+<div id="taf9_2393" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong> </span>La pendiente es la tasa de cambio variable. En esta situación, el costo adicional por cada kilómetro es de $500. Esto es lo que hace que el costo total cambie, por lo que es la pendiente. La tarifa base de $20.000 es la ordenada al origen.</p>
+</div>
+</section>
+<section id="sa2b9_2387" class="feedback js-hidden">
+<div id="taf9_2408" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong> </span>Este valor representa un costo fijo negativo.</p>
+</div>
+</section>
+<section id="sa3b9_2387" class="feedback js-hidden">
+<div id="taf9_2411" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span> </strong>El costo del transporte aumenta a medida que se recorren más kilómetros, por lo que la pendiente debe ser positiva, no negativa.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_2390">Incorrecto</a><span> (<a href="#sa0b9_2387">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2393">Opción correcta</a><span> (<a href="#sa1b9_2387">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2408">Incorrecto</a><span> (<a href="#sa2b9_2387">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2411">Incorrecto</a><span> (<a href="#sa3b9_2387">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_2396" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_2396" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 19.</span> <span style="color: #339966;">Hallar la pendiente. </span></strong></p>
+<p>Una familia en Villa del Rosario usa un cilindro de gas para cocinar. El consumo registrado en metros cúbicos (m) en función del número de días (d) es el siguiente:<br /><img src="img0.29.png" width="308" height="168" alt="dias consumo" /><br />¿Cuál es la pendiente que describe la tasa de consumo de gas por día?</p>
+<p></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2399" class="sr-av"><a href="#answer-9_2399">Opción 1</a></label><input type="radio" name="option9_2396" id="i9_2399" class="exe-radio-option exe-radio-option-0-4-9_2396-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2399"><div id="taans9_2399" class="block iDevice_content">
+<p><span style="color: #000000;">2</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2402" class="sr-av"><a href="#answer-9_2402">Opción 2</a></label><input type="radio" name="option9_2396" id="i9_2402" class="exe-radio-option exe-radio-option-1-4-9_2396-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2402"><div id="taans9_2402" class="block iDevice_content">
+<p>2.5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2405" class="sr-av"><a href="#answer-9_2405">Opción 3</a></label><input type="radio" name="option9_2396" id="i9_2405" class="exe-radio-option exe-radio-option-2-4-9_2396-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2405"><div id="taans9_2405" class="block iDevice_content">
+<p>20</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2415" class="sr-av"><a href="#answer-9_2415">Opción 4</a></label><input type="radio" name="option9_2396" id="i9_2415" class="exe-radio-option exe-radio-option-3-4-9_2396-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2415"><div id="taans9_2415" class="block iDevice_content">
+<p>45</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_2396" class="feedback js-hidden">
+<div id="taf9_2399" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto.</strong> </span>La pendiente se calcula como el cambio en el consumo dividido por el cambio en los días. Usando los puntos (10, 25) y (20, 45)<br /><br /><img src="img0.28.png" width="436" height="52" alt="pendiente gasolina" /></p>
+</div>
+</section>
+<section id="sa1b9_2396" class="feedback js-hidden">
+<div id="taf9_2402" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span> </strong>Este valor no corresponde a la tasa de cambio.<br /> </p>
+</div>
+</section>
+<section id="sa2b9_2396" class="feedback js-hidden">
+<div id="taf9_2405" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto.</span></strong> Este valor es el cambio en el consumo, no la tasa de cambio.<br /> </p>
+</div>
+</section>
+<section id="sa3b9_2396" class="feedback js-hidden">
+<div id="taf9_2415" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> El valor de 45 es el consumo total a los 20 días, no la tasa de consumo.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_2399">Opción correcta</a><span> (<a href="#sa0b9_2396">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2402">Incorrecto</a><span> (<a href="#sa1b9_2396">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2405">Incorrecto</a><span> (<a href="#sa2b9_2396">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2415">Incorrecto</a><span> (<a href="#sa3b9_2396">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-9_2580" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion9_2580" class="block question iDevice_content">
+<p><strong><span style="color: #ff6600;">Ejercicio 20.</span> <span style="color: #339966;">Hallar la pendiente. </span></strong></p>
+<p>Un sensor en la quebrada La Mulata mide el nivel de agua durante un período de lluvias. La gráfica muestra el nivel de agua (en metros) a lo largo de varias horas.</p>
+<p><img src="img0.30.png" width="596" height="476" alt="Quebrada la mulata" /></p>
+<p>¿Cuál es la pendiente de la función que representa el nivel del agua?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2583" class="sr-av"><a href="#answer-9_2583">Opción 1</a></label><input type="radio" name="option9_2580" id="i9_2583" class="exe-radio-option exe-radio-option-0-4-9_2580-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2583"><div id="taans9_2583" class="block iDevice_content">
+<p>1</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2586" class="sr-av"><a href="#answer-9_2586">Opción 2</a></label><input type="radio" name="option9_2580" id="i9_2586" class="exe-radio-option exe-radio-option-1-4-9_2580-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2586"><div id="taans9_2586" class="block iDevice_content">
+<p>0.5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2590" class="sr-av"><a href="#answer-9_2590">Opción 3</a></label><input type="radio" name="option9_2580" id="i9_2590" class="exe-radio-option exe-radio-option-2-4-9_2580-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2590"><div id="taans9_2590" class="block iDevice_content">
+<p>1.5</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i9_2593" class="sr-av"><a href="#answer-9_2593">Opción 4</a></label><input type="radio" name="option9_2580" id="i9_2593" class="exe-radio-option exe-radio-option-3-4-9_2580-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-9_2593"><div id="taans9_2593" class="block iDevice_content">
+<p>2</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b9_2580" class="feedback js-hidden">
+<div id="taf9_2583" class=" iDevice_content">
+<p><strong><span style="color: #ff0000;">Incorrecto</span></strong> .Este es el cambio en el nivel de agua, no la tasa de cambio.</p>
+</div>
+</section>
+<section id="sa1b9_2580" class="feedback js-hidden">
+<div id="taf9_2586" class=" iDevice_content">
+<p><span style="color: #339966;"><strong>Correcto. </strong></span>La pendiente se calcula como la razón de cambio entre dos puntos de la gráfica. Usando los puntos (2, 1.5) y (4, 2.5):<br /><img src="img0.31.png" width="407" height="52" alt="pendiente 0,5" /></p>
+</div>
+</section>
+<section id="sa2b9_2580" class="feedback js-hidden">
+<div id="taf9_2590" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Este es el valor de la ordenada al origen si se proyecta la línea hacia el eje y.</p>
+</div>
+</section>
+<section id="sa3b9_2580" class="feedback js-hidden">
+<div id="taf9_2593" class=" iDevice_content">
+<p><span style="color: #ff0000;"><strong>Incorrecto.</strong></span> Este es el cambio en las horas, no la tasa de cambio.</p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-9_2583">Incorrecto</a><span> (<a href="#sa0b9_2580">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2586">Opción correcta</a><span> (<a href="#sa1b9_2580">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2590">Incorrecto</a><span> (<a href="#sa2b9_2580">Retroalimentación</a>)</span></li>
+<li><a href="#answer-9_2593">Incorrecto</a><span> (<a href="#sa3b9_2580">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+</div>
+</section>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

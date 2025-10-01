@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Módulo de evaluación | Semiótica Funcional</title>
+
+
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Lic. Juan">
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<script src="exe_jquery.js"></script>
+<script src="common_i18n.js"></script>
+<script src="common.js"></script>
+<!--[if lt IE 9]><script src="exe_html5.js"></script><![endif]-->
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Estilos principales -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  nav {
+    background: #1b263b;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    background: #415a77;
+    color: #ffcc66;
+  }
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b263b;
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li ul li a {
+    padding: 0.8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  main h1 {
+    font-family: 'Merriweather', serif;
+    color: #0d1b2a;
+  }
+  main h2 {
+    margin-top: 1.5rem;
+    color: #1b263b;
+  }
+  ol li {
+    margin-bottom: 0.8rem;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: bold;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  footer {
+    background: #0d1b2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    nav ul li ul {
+      position: static;
+    }
+  }
+</style>
+
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Inicio</a></li>
+    <li>
+      <a href="mdulo_introductorio.html">Módulo introductorio</a>
+      <ul>
+        <li><a href="marco_terico.html">Marco teórico</a></li>
+        <li><a href="objetivos_de_aprendizaje.html">Objetivos de aprendizaje</a></li>
+        <li><a href="historia_de_las_funciones.html">Historia de las funciones</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_diagnstico.html">Módulo de diagnóstico</a>
+      <ul>
+        <li><a href="cuestionario_tic.html">Cuestionario TIC</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_desarrollo.html">Módulo de desarrollo</a>
+      <ul>
+        <li><a href="contenidos_tericos.html">Contenidos teóricos</a></li>
+        <li><a href="ejercitacin.html">Ejercitación</a></li>
+        <li><a href="foro_de_discusin.html">Foro de discusión</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="mdulo_de_evaluacin.html">Módulo de evaluación</a>
+      <ul>
+        <li><a href="proyecto.html">Proyecto</a></li>
+        <li><a href="autoevaluacin.html">Autoevaluación</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+</head>
+<body class="exe-web-site" id="exe-node-12">
+<script>document.body.className+=" js"</script>
+
+
+  <div id="main-wrapper">
+    <section id="main">
+      <header id="nodeDecoration">
+        <h1 id="nodeTitle">Módulo de evaluación</h1>
+      </header>
+
+      <article class="iDevice_wrapper textIdevice">
+        <div class="iDevice emphasis1">
+          <header class="iDevice_header iDevice_header_noIcon">
+          </header>
+          <div class="iDevice_inner">
+            <div class="iDevice_content_wrapper">
+              <div class="card">
+                <div class="exe-text">
+                  <h1 style="text-align:left; color:#0d1b2a; font-family: 'Merriweather', serif; font-size:2rem; margin-bottom:1rem;">Evaluación y proyecto final</h1>
+                  <p>En este módulo, los estudiantes aplicarán los conceptos aprendidos sobre las funciones lineales y Semiótica Funcional. Se evaluará:</p>
+                  <ul>
+                    <li><strong><span style="color:#ff6600;">Comprensión de Semiótica Funcional:</span></strong> Capacidad de pasar de gráficos, tablas, ecuaciones y descripciones verbales de manera fluida.</li>
+                    <li><strong><span style="color:#ff6600;">Resolución de problemas:</span></strong> Aplicación de las funciones lineales a situaciones reales en contextos rurales y cotidianos.</li>
+                    <li><strong><span style="color:#ff6600;">Proyecto final:</span></strong> Elaboración de un proyecto que integre teoría y práctica, mostrando análisis, predicciones y conclusiones basadas en las Semiótica Funcional.</li>
+                  </ul>
+                  <p>El objetivo es consolidar el aprendizaje y preparar a los estudiantes para tomar decisiones informadas y analizar problemas reales mediante las herramientas matemáticas vistas en el curso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <div id="bottomPagination">
+    <nav class="pagination noprt">
+      <a href="foro_de_discusin.html" class="prev"><span>&laquo; Anterior</span></a>
+      <span class="sep">|</span>
+      <a href="proyecto.html" class="next"><span>Siguiente &raquo;</span></a>
+    </nav>
+  </div>
+
+</div>
+
+
+<script src="_style_js.js"></script>
+</body>
+</html>
